@@ -2,20 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     margin: auto;
     overflow-x: hidden;
     background-size: cover no-repeat;
+    background-attachment: fixed;
 }
 body::-webkit-scrollbar{
-    width: 11px;
-    background-color: #ffffff;
+    width: 13px;
+    background-color: #f4f4f4;
     background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #2e58a6;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-circles.png");
-    border-radius: 8px;
+    background-color: #f29100;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    border-radius: 4px;
+}
+
+h1 {
+    color: white;
 }
