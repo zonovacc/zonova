@@ -6,10 +6,10 @@
         left: 0;
         margin: 100px 0;
     }
-    header, #btn, #cancel {
+    .sidebar header, #btn, #cancel {
         display: none;
     }
-    span {
+    .sidebar a span {
         position: absolute;
         margin-left: 23px;
         opacity: 0;
@@ -18,7 +18,7 @@
     .sidebar a i {
         margin-left: -10px;
     }
-    a:hover {
+    .sidebar a:hover {
         width: 200px;
         background: inherit;
     }
@@ -26,5 +26,13 @@
         opacity: 1;
         visibility: visible;
         transition: all .5s ease;
+    }
+}
+
+/* POPUP VIDEO/TEASER */
+@media (max-width: 991px) {
+    .teaser video {
+        max-width: 90%;
+        
     }
 }
