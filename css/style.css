@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+    background-size: cover no-repeat;
+}
+body::-webkit-scrollbar{
+    width: 11px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #2e58a6;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-circles.png");
+    border-radius: 8px;
+}
