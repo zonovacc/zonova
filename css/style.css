@@ -116,7 +116,7 @@ label #cancel {
 
 .separate1 {
     width: 100%;
-    height: 190px;
+    height: 200px;
 }
 
 .content1 {
@@ -218,3 +218,5 @@ label #cancel {
     font-size: 45px;
     margin-top: 13px;
 }
+
+/* CHATBOX */

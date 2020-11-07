@@ -6,3 +6,5 @@ function toggle() {
     video.pause();
     video.currentTime = 0;
 }
+
+// CHATBOX
