@@ -204,9 +204,17 @@ label #cancel {
 }
 
 /* LOGO */
-
+.photo-logo {
+    margin-top: -135px;
+}
 .photo-logo img {
     display: block;
     margin: auto;
-    width: 200px;
+    width: 440px;
+}
+.photo-logo p {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 13px;
 }
