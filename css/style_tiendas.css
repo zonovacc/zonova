@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-size: cover no-repeat;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar{
+    width: 13px;
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f29100;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    border-radius: 4px;
+}
+
+/* SIDEBAR MENÚ */
+
+.sidebar {
+    position: fixed;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    background: #1b1b1b;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    color: #fff;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    background-color: #141414;
+    user-select: none;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid #000;
+    border-left: 5px solid transparent;
+    transition: all .5s ease;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #f29100;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    border-left: 5px solid #f29100;
+    color: #f29100;
+}
+
+.sidebar a i {
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.sidebar a span {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #f29100;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 29px;
+    border-radius: 5px;
+    margin: 15px 30px;
+    border: 1px solid #b36b00;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #btn {
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #cancel {
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
