@@ -1,4 +1,5 @@
 // POPUP VIDEO/TEASER
+
 function toggle() {
     var teaser = document.querySelector(".teaser")
     var video = document.querySelector("video")
@@ -6,5 +7,6 @@ function toggle() {
     video.pause();
     video.currentTime = 0;
 }
+
 
 // CHATBOX

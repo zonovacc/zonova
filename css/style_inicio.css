@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
+
 /* SIDEBAR MENÚ */
 
 .sidebar {
@@ -29,7 +30,8 @@ body::-webkit-scrollbar-thumb{
     left: -240px;
     width: 240px;
     height: 100%;
-    background: #1b1b1b;
+    background-color: #1b1b1b;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
     transition: all .5s ease;
 }
 
@@ -38,7 +40,8 @@ body::-webkit-scrollbar-thumb{
     font-size: 28px;
     line-height: 70px;
     text-align: center;
-    background-color: #141414;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
     user-select: none;
 }
 
@@ -80,7 +83,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 label #btn, label #cancel {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: #f29100;
     height: 45px;
@@ -122,6 +125,7 @@ label #cancel {
 .content1 {
     display: flex;
 }
+
 
 /* TEXT & VIDEO */
 
@@ -203,7 +207,9 @@ label #cancel {
     transition: all .3s ease;
 }
 
+
 /* LOGO */
+
 .photo-logo {
     margin-top: -135px;
 }
@@ -218,5 +224,6 @@ label #cancel {
     font-size: 45px;
     margin-top: 13px;
 }
+
 
 /* CHATBOX */

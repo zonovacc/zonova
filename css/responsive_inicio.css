@@ -1,4 +1,5 @@
 /* RESPONSIVE SIDEBAR */
+
 @media (max-width: 860px) {
     .sidebar {
         height: auto;
@@ -29,7 +30,9 @@
     }
 }
 
+
 /* POPUP VIDEO/TEASER */
+
 @media (max-width: 991px) {
     .teaser video {
         max-width: 90%;

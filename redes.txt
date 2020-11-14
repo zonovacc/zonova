@@ -1,0 +1,4 @@
+Facebook: https://www.facebook.com/sharer/sharer.php?u=LINKTIENDA
+Twitter: https://twitter.com/intent/tweet?url=LINKTIENDA&text=Hola%20amigos,%20encontr%C3%A9%20esta%20nueva%20tienda%20llamada%20%22TIENDA%22%20en%20la%20p%C3%A1gina&hashtags=ropa&hashtags=tiendavirtual&hashtags=moda
+WhatsApp: https://api.whatsapp.com/send?text=Hola%20amigos,%20encontr%C3%A9%20esta%20nueva%20tienda%20llamada%20%2ATIENDA%2A%20en%20la%20p%C3%A1gina%20LINKTIENDA
+Linkedin: https://www.linkedin.com/sharing/share-offsite/?url=LINKTIENDA
