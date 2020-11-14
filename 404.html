@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404 | Zonova</title>
-    <link rel="stylesheet" type="text/css" href="css/404.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #2591da, #0b5c92);
+            height: 100vh;
+        }
+
+        #container {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            bottom: 10%;
+            right: 10%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(img/p404.png) #151729;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+        }
+
+        #container .content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        #container .content h2 {
+            font-size: 18vw;
+            color: #fff;
+            line-height: 1em;
+        }
+
+        #container .content h4 {
+            position: relative;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #111;
+            background: #fff;
+            font-weight: 300;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        #container .content p {
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        #container .content a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 25px;
+            background: #f29100;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            margin-top: 25px;
+            border-radius: 25px;
+            border-bottom: 4px solid #bd7100;
+            transition: .3s;
+        }
+
+        #container .content a:hover {
+            letter-spacing: 1px;
+            background: #e08700;
+            border-bottom: 4px solid #ad6800;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
