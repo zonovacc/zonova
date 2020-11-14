@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 | Zonova</title>
+    <link rel="stylesheet" type="text/css" href="css/404.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <h2>404</h2>
+            <h4>Oops! Página no encontrada</h4>
+            <p>La página que buscabas no existe. Es posible que hayas escrito mal la dirección o que la página haya sido eliminada.</p>
+            <a href="tiendas">Volver a <b>Tiendas</b></a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var container = document.getElementById('container');
+        window.onmousemove = function(e) {
+            var x = - e.clientX/5,
+                y = - e.clientY/5;
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+        }
+    </script>
+</body>
+</html>
