@@ -25,6 +25,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+
 
 /* SIDEBAR MENÚ */
 
@@ -118,6 +123,58 @@ label #cancel {
 }
 #check:checked ~ .sidebar {
     left: 0;
+}
+
+.modon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.switch {
+    background: #343D5B;
+    font-size: 20px;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: #f29100;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
 }
 
 
@@ -330,12 +387,30 @@ label #cancel {
     -webkit-box-shadow: 0px 0px 27px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 27px -13px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 27px -13px rgba(0,0,0,0.75);
+    transition: .3s ease all;
+}
+
+body.dark .portfolio-filter li {
+    background: rgb(90, 94, 109);
+    color: rgb(255, 255, 255);
 }
 
 .portfolio-filter li.active {
     background: #f29100;
+    font-weight: 600;
+    transition: .3s ease all;
 }
+
+body.dark .portfolio-filter li.active {
+    background: #f29100;
+    font-weight: 600;
+}
+
 .portfolio-filter li:hover {
+    background: rgb(53, 167, 223);
+}
+
+body.dark .portfolio-filter li:hover {
     background: rgb(53, 167, 223);
 }
 
@@ -357,6 +432,13 @@ label #cancel {
     box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     width: 260px;
+    transition: .3s ease all;
+}
+
+body.dark .portfolio-col {
+    background-color: #0a0a0a;
+    background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+    box-shadow: 0px 1px 15px -1px rgba(255, 255, 255, 0.1);
 }
 
 .portfolio-col .portfolio-img {
@@ -384,6 +466,11 @@ label #cancel {
 	text-transform:capitalize;
     font-weight: 600;
     font-size: 22px;
+    transition: .3s ease all;
+}
+
+body.dark .portfolio-col .portfolio-info h4 {
+    color: #fff;
 }
 
 .portfolio-col .portfolio-info a {
@@ -408,4 +495,83 @@ label #cancel {
 
 .portfolio-col .portfolio-info a i {
     margin-left: 2px;
+}
+
+
+/* REDES SOCIALES */
+
+.sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+
+.sm a {
+    display: inline-block;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 64px;
+    text-align: center;
+    color: #f29100;
+    margin: 0 16px;
+    transition: .4s linear;
+    position: relative;
+}
+
+body.dark .sm a {
+    color: #35a7f5;
+}
+
+.sm a::before,
+.sm a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+.sm a:hover {
+    transform: scale(.8);
+}
+
+.sm a:hover::before {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    transform: skewX(20deg);
+}
+
+.sm a:hover::after {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    transform: skewY(-20deg);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer span {
+    color: #F29100;
 }

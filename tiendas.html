@@ -33,6 +33,35 @@
     </div>
 
 
+    <!-- CHATBOX -->
+    
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v9.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="109646217424400"
+        logged_in_greeting="¡Hola! ¿En qué te podemos ayudar?"
+        logged_out_greeting="¡Hola! ¿En qué te podemos ayudar?">
+    </div>
+
     <!-- MENU -->
 
     <input type="checkbox" id="check">
@@ -48,6 +77,12 @@
         <a href="galeria"><i class="fas fa-video"></i><span>Galería</span></a>
         <a href="nosotros"><i class="fas fa-users"></i><span>Nosotros</span></a>
         <a href="contacto"><i class="fas fa-phone-alt"></i><span>Contacto</span></a>
+        <div class="container-fluid modon">
+            <button class="switch active" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>
+        </div>
     </div>
 
 
@@ -220,6 +255,23 @@
         </div>
     </div>
     
+
+    <!-- REDES SOCIALES -->
+
+    <div class="sm">
+        <a target="_blank" href="https://www.instagram.com/ZonovaCC/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://www.facebook.com/ZonovaCC/"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCgU_oRvU_OtL0pQ-GVA3T-g?sub_confirmation=1"><i class="fab fa-youtube"></i></a>
+    </div>
+
+
+    <!-- FOOTER -->
+    
+    <footer>
+        <div class="footer">
+            <h4>Copyright © 2020 <span>por Zonova</span></h4>
+        </div>
+    </footer>
 
 
     <script src="js/jquery-3.5.1.min.js"></script>
