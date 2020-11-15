@@ -393,13 +393,17 @@ label #cancel {
     border: 2px solid #f29100;
     padding: 10px 20px;
     border-radius: 20px;
+    transition: .4s;
 }
 
 .portfolio-col .portfolio-info a:hover {
-    background: #f29100;
-    transition: .5s;
     color: #fff;
-    border: 2px solid #f29100;
+    letter-spacing: 1px;
+    background: #f29100;
+    border-top: 2px solid #ad6800;
+    border-left: 2px solid #ad6800;
+    border-right: 2px solid #ad6800;
+    border-bottom: 4px solid #ad6800;
 }
 
 .portfolio-col .portfolio-info a i {
