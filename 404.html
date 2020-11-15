@@ -81,17 +81,30 @@
             background: #e08700;
             border-bottom: 4px solid #ad6800;
         }
+
+        #container .content img {
+            position:absolute;
+            width: 70px;
+            bottom: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
+    <!-- ERROR 404 -->
+
     <div id="container">
         <div class="content">
             <h2>404</h2>
             <h4>Oops! Página no encontrada</h4>
             <p>La página que buscabas no existe. Es posible que hayas escrito mal la dirección o que la página haya sido eliminada.</p>
             <a href="/zonova/tiendas">Volver a <b>Tiendas</b></a>
+            <img src="img/logo_preloader.svg" alt="Logo Zonova blanco y sin fondo">
         </div>
     </div>
+
+
+    <!-- EFECTO PARALLAX -->
 
     <script type="text/javascript">
         var container = document.getElementById('container');
