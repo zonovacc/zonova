@@ -16,7 +16,7 @@ function set_element(element, totalElement) {
     if ($(element).length==1) {
         $("#fill").animate({
             width: progress + percetage + "%"
-        }, 20, function(){
+        }, 10, function(){
             if(document.getElementById("fill").style.width=="100%") {
                 $(".main").fadeOut(500);
             }

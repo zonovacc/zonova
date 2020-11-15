@@ -16,7 +16,7 @@ function set_element(element, totalElement) {
     if ($(element).length==1) {
         $("#fill").animate({
             width: progress + percetage + "%"
-        }, 20, function(){
+        }, 10, function(){
             if(document.getElementById("fill").style.width=="100%") {
                 $(".main").fadeOut(500);
             }
@@ -50,32 +50,32 @@ $('.filter li').click(function(){
     /* Lista de Tiendas */
 
 let suggestions = [
-    "Channel",
-    "CodingLab",
-    "CodingNepal",
-    "YouTube",
-    "YouTuber",
-    "YouTube Channel",
-    "Blogger",
-    "Bollywood",
-    "Vlogger",
-    "Vechiles",
-    "Facebook",
-    "Freelancer",
-    "Facebook Page",
-    "Designer",
-    "Developer",
-    "Web Designer",
-    "Web Developer",
-    "Login Form in HTML & CSS",
-    "How to learn HTML & CSS",
-    "How to learn JavaScript",
-    "How to became Freelancer",
-    "How to became Web Designer",
-    "How to start Gaming Channel",
-    "How to start YouTube Channel",
-    "What does HTML stands for?",
-    "What does CSS stands for?",
+    "channel",
+    "codingLab",
+    "codingNepal",
+    "youTube",
+    "youTuber",
+    "youTube Channel",
+    "blogger",
+    "bollywood",
+    "vlogger",
+    "vechiles",
+    "facebook",
+    "freelancer",
+    "facebook Page",
+    "designer",
+    "developer",
+    "web Designer",
+    "web Developer",
+    "login Form in HTML & CSS",
+    "how to learn HTML & CSS",
+    "how to learn JavaScript",
+    "how to became Freelancer",
+    "how to became Web Designer",
+    "how to start Gaming Channel",
+    "how to start YouTube Channel",
+    "what does HTML stands for?",
+    "what does CSS stands for?",
 ];
 
 
