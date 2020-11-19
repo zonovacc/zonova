@@ -355,7 +355,7 @@ label #cancel {
 }
 
 
-/* ÚLTIMOS PRODUCTOS */
+/* EN PROMOCIÓN */
 
 .texto1 {
     width: 100%;
@@ -365,6 +365,7 @@ label #cancel {
 
 .texto1 h3 {
     font-size: 32px;
+    text-transform: uppercase;
 }
 
 .wrapper1 {
@@ -377,7 +378,7 @@ label #cancel {
     position: relative;
     width: 320px;
     height: 420px;
-    background: #122936;
+    background: #0a1318;
     border-radius: 20px;
     overflow: hidden;
     margin: 25px;
@@ -389,7 +390,7 @@ label #cancel {
     top: -50%;
     width: 100%;
     height: 100%;
-    background: #2196f3;
+    background: #c3aa74;
     transform: skewY(345deg);
     transition: 0.5s;
 }
@@ -462,11 +463,15 @@ label #cancel {
     margin-top: 15px;
     color: #fff;
     text-decoration: none;
-    background: #2196f3;
+    background: #c3aa74;
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.card .contentBx .buy:hover {
+    background: #927e53;
 }
 
 .card:hover .contentBx .buy {
@@ -503,3 +508,581 @@ label #cancel {
     font-size: 32px;
 }
 
+.box {
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.slider {
+    height: 325px;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    padding: 10px 20px;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type p {
+    color: #000;
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.type span {
+    color: rgba(41, 38, 38, 0.5);
+    font-weight: 500;
+}
+
+.precioproducto {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.masinfo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #c4aa72d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnmasinfo {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+}
+
+.btnmasinfo:hover {
+    color: #fff;
+    background-color: #0a1318;
+    transition: .3s ease all;
+}
+
+.masinfo {
+    visibility: hidden;
+}
+
+.slider:hover .masinfo {
+    visibility: visible;
+    animation: desvanecerimagen 0.5s;
+}
+
+@keyframes desvanecerimagen {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* PRENDAS RELEVANTES */
+
+.texto3 {
+    width: 100%;
+    margin-top: 56px;
+    text-align: center;
+}
+
+.texto3 h3 {
+    font-size: 32px;
+}
+
+.main1 {
+    padding: 2rem 0;
+}
+
+.bg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1000px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-shop {
+    position: relative;
+    margin: 0 2.5rem;
+}
+
+.title-shop::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 2px;
+    margin-left: 0.25rem;
+}
+
+article:nth-child(1),
+article:nth-child(2),
+article:nth-child(3) {
+    background-color: #c3aa74;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card1:hover {
+    box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, .7);
+}
+
+.card-img {
+    width: 180px;
+    height: auto;
+    padding: 3rem 0;
+    transition: 0.5s;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card1:hover .card-img {
+    transform: rotate(30deg);
+    margin-left: 3.5rem;
+}
+
+.card-name {
+    position: absolute;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #0a1318;
+    color: #fff;
+    font-size: 18px;
+    padding: 17px 17px;
+    font-weight: 500;
+    left: -25%;
+    transition: 0.5s;
+}
+
+.card1:hover .card-name {
+    left: 0%;
+}
+
+.card-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card-price img {
+    width: 34px;
+}
+
+.card1:hover .card-price {
+    margin-left: 3.5rem;
+    padding: 0 1.5rem;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    color: #0a1318;
+}
+
+.precio {
+    display: block;
+    text-align: center;
+}
+
+.card-price-before {
+    font-size: 18px;
+    color: #0a1318;
+    margin-bottom: 0.25rem;
+}
+
+.card-price-after {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+/* PRODUCTOS */
+
+.texto4 {
+    width: 100%;
+    margin-top: 49px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.texto4 h3 {
+    font-size: 32px;
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+    /* HEADER */
+
+.contenedor1 header {
+    padding: 10px 0;
+}
+
+.contenedor1 header .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor1 header .categorias a {
+    color: #000;
+    margin: 10px 20px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.contenedor1 header .categorias a:hover {
+    color: #c3aa74;
+}
+
+.contenedor1 header .categorias a.activo {
+    color: #c3aa74;
+    font-weight: 800;
+}
+
+    /* GRID */
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 2.5s;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.3333333% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+    /* OVERLAY */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay.activo {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+}
+
+.overlay .descripcion {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.contenedor-img {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    outline: none;
+}
+
+
+/* CONTACTO */
+
+.texto5 {
+    width: 100%;
+    margin-top: 49px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.texto5 h3 {
+    font-size: 32px;
+}
+
+.contactot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+    padding: 10px;
+    text-align: center;
+    max-width: 470px;
+}
+
+.box2 img {
+    width: 400px;
+    max-width: 100%;
+}
+
+.box2 h2 {
+    margin: 10px 0 0;
+    font-size: 27px;
+}
+
+.box2 p {
+    margin: 10px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 30px 40px 30px;
+}
+
+.correot {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+    font-size: 17px;
+    height: 42px;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #0a1318;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    font-size: 17px;
+    height: 42px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.correot:focus, .btn:focus {
+    outline: 0;
+}
+
+    /* COMPARTIR */
+
+.botonshare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.fa-instagram {
+    border-radius: 50%;
+    background: #0a1318;
+    color: #fff;
+    padding: 15px;
+    font-size: 19px;
+    margin-right: 20px;
+    transition: 0.5s ease all;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(200deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+}
+
+.fa-share {
+    border-radius: 50%;
+    background: #0a1318;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.fa-share:hover {
+    background: #363c3f;
+}
+
+.fa-share:active {
+    transform: translateY(2px);
+}
+
+.hide {
+    position: absolute;
+    background: #c3aa74;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    height: 10px;
+    border-radius: 13px;
+    margin-top: -132px;
+    margin-left: -98px;
+}
+
+.hide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #c3aa74;
+    border-bottom: 0;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+
+.hide ul {
+    list-style: none;
+    display: flex;
+}
+
+.hide ul li {
+    padding-left: 19px;
+}
+
+.hide ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+}
+
+.hide p {
+    text-transform: uppercase;
+    margin-right: 18px;
+    color: #000;
+    opacity: 0.9;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.fa-facebook-square:hover {
+    color: #3B5998;
+}
+.fa-twitter-square:hover {
+    color: #00ACEE;
+}
+.fa-whatsapp-square:hover {
+    color: #25D366;
+}
+.fa-linkedin:hover {
+    color: #0E76A8;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #030713;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer span {
+    color: #F29100;
+}
