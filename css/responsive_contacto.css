@@ -1,32 +1,18 @@
-/* RESPONSIVE SIDEBAR */
+/* HEADER */
 
 @media (max-width: 860px) {
-    .sidebar {
-        height: auto;
-        width: 70px;
-        left: 0;
-        margin: 100px 0;
+    .header1 img {
+        width: 230%;
     }
-    .sidebar header, #btn, #cancel {
-        display: none;
+
+    .text-nosotros {
+        width: 180px;
+        left: 60%;
+        margin-top: -80px;
     }
-    .sidebar a span {
-        position: absolute;
-        margin-left: 23px;
-        opacity: 0;
-        visibility: hidden;
-    }
-    .sidebar a i {
-        margin-left: -10px;
-    }
-    .sidebar a:hover {
-        width: 200px;
-        background: inherit;
-    }
-    .sidebar a:hover span {
-        opacity: 1;
-        visibility: visible;
-        transition: all .5s ease;
+
+    .text-nosotros h2 {
+        font-size: 35px;
     }
 }
 
@@ -59,22 +45,41 @@
 
 /* FOOTER */
 
-@media (min-width: 600px) {
-    .footer-right > * {
-        flex: 1;
+@media (max-width: 991px) {
+    footer {
+        padding: 0 20px;
+        text-align: center;
     }
 
-    .footer-left {
-        flex: 1 0px;
+    footer .container4 {
+        flex-direction: column;
     }
 
-    .footer-right {
-        flex: 2 0px;
+    footer .container4 .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
     }
-}
 
-@media (max-width: 600px) {
+    footer .container4 .sec.aboutus img {
+        margin-top: 20px;
+    }
+
+    footer .container4 .sec.aboutus,
+    .acercade,
+    .proyectos {
+        width: 100%;
+    }
+
+    footer .container4 h2::before {
+        display: none;
+    }
+
     .footer {
-        padding: 15px;
+        height: 80px;
+    }
+
+    .proyectos .info2 li {
+        display: flex;
+        justify-content: center;
     }
 }
