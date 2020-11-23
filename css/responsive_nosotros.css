@@ -1,31 +1,49 @@
-/* RESPONSIVE SIDEBAR */
+/* HEADER */
 
 @media (max-width: 860px) {
-    .sidebar {
-        height: auto;
-        width: 70px;
-        left: 0;
-        margin: 100px 0;
+    .header1 img {
+        width: 230%;
     }
-    .sidebar header, #btn, #cancel {
-        display: none;
+
+    .text-nosotros {
+        width: 180px;
+        left: 60%;
+        margin-top: -80px;
     }
-    .sidebar a span {
-        position: absolute;
-        margin-left: 23px;
-        opacity: 0;
-        visibility: hidden;
+
+    .text-nosotros h2 {
+        font-size: 35px;
     }
-    .sidebar a i {
-        margin-left: -10px;
+}
+
+
+/* PROFILE CARDS */
+
+@media (max-width: 860px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
     }
-    .sidebar a:hover {
-        width: 200px;
-        background: inherit;
+
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
     }
-    .sidebar a:hover span {
-        opacity: 1;
-        visibility: visible;
-        transition: all .5s ease;
+
+    .nosotros1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor1 {
+        width: auto;
+    }
+
+    .nosotros1 .card {
+        width: auto;
+        margin-bottom: 10px;
     }
 }

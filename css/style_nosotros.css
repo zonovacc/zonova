@@ -285,12 +285,14 @@ label #cancel {
 
 .contenedor {
     display: flex;
-    margin-left: 110px;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
 }
 .contenedor2 {
     display: flex;
-    margin-left: 110px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 

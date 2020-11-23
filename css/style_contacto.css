@@ -639,6 +639,7 @@ footer .container4 h2::before {
 footer p {
     color: #fff;
     font-size: 17px;
+    text-align: justify;
 }
 
 footer p span {
