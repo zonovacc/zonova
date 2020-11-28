@@ -1,32 +1,41 @@
-/* RESPONSIVE SIDEBAR */
+/* RESPONSIVE INICIO */
 
-@media (max-width: 860px) {
-    .sidebar {
-        height: auto;
-        width: 70px;
-        left: 0;
-        margin: 100px 0;
+@media (max-width: 990px) {
+    .content1 {
+        flex-direction: column;
     }
-    .sidebar header, #btn, #cancel {
+
+    .text-welcome {
+        min-height: 10%;
+    }
+
+    .photo-logo {
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .text-welcome p {
+        text-align: left;
+    }
+}
+
+@media (min-width: 990px) {
+    .separador1,
+    .separador2 {
         display: none;
     }
-    .sidebar a span {
-        position: absolute;
-        margin-left: 23px;
-        opacity: 0;
-        visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    .photo-logo img {
+        width: auto;
     }
-    .sidebar a i {
-        margin-left: -10px;
-    }
-    .sidebar a:hover {
-        width: 200px;
-        background: inherit;
-    }
-    .sidebar a:hover span {
-        opacity: 1;
-        visibility: visible;
-        transition: all .5s ease;
+
+    .photo-logo p {
+        color: #fff;
+        text-align: center;
+        font-size: 45px;
     }
 }
 
