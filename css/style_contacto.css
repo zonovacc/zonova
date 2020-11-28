@@ -33,113 +33,85 @@ body.dark {
 
 /* PRELOADER */
 
-.svg-snowscene {
+.loader-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #050713;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
     width: 100%;
-}
-  
-.snow {
-    fill: #fff;
-    animation-name: snowing;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    z-index: 9999;
 }
 
-.snow:nth-child(2n) {
-    animation-delay: 1.5s;
+.loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
 }
 
-.snow:nth-child(3n) {
-    animation-delay: 2.3s;
-    animation-duration: 3.3s;
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
 }
 
-.snow:nth-child(4n) {
-    animation-delay: 0.8s;
-    animation-duration: 3.2s;
+.loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
 }
 
-.snow:nth-child(5n) {
-    animation-delay: 2.8s;
-}
-  
-@keyframes snowing {
+@keyframes animate {
     0% {
-      fill-opacity: 1;
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(1.2);
+    }
+    80%, 100% {
+        transform: scale(0);
+    }
+}
+
+.zonova {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotating 2s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(10deg);
     }
     100% {
-      fill-opacity: 0;
-      transform: translateY(200px);
+        transform: rotate(370deg);
     }
 }
 
-.main {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(80deg, #110e1f, #1b1730);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-.text {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/background_home.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    font-family: 'Calligraffitti', cursive;
-    font-size: 100px;
-    text-align: center;
-    line-height: 650px;
+.zonova::before {
+    content: url(../img/logo_preloader.svg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    color: transparent;
-    -webkit-background-clip: text;
-    pointer-events: none;
-    animation: anim1 1s infinite;
-}
-
-@keyframes anim1 {
-    0% {background-image: url(../img/back1.jpg);}
-    20% {background-image: url(../img/back2.jpg);}
-    40% {background-image: url(../img/back3.jpg);}
-    60% {background-image: url(../img/back4.jpg);}
-    80% {background-image: url(../img/back5.jpg);}
-    100% {background-image: url(../img/back6.jpg);}
-}
-
-.title5 {
-    font-size: 15px;
-    color: #fff;
-    letter-spacing: 4px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.bar {
-    width: 130px;
-    height: 4px;
-    background-color: #282246;
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
-
-#fill {
-    width: 0%;
-    height: 100%;
-    background-color: #fff;
-    position: relative;
-    top: 0;
-    left: 0;
+    top: 80px;
+    left: 85px;
+    width: 60px;
+    transform: rotate(135deg);
 }
 
 
