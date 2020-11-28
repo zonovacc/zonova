@@ -278,6 +278,7 @@ label #cancel {
 
 .text-welcome a:hover {
     background: #f29100;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
 }
 
 .teaser {
