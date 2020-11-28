@@ -5,14 +5,8 @@
         width: 230%;
     }
 
-    .text-nosotros {
-        width: 180px;
-        left: 60%;
-        margin-top: -80px;
-    }
-
     .text-nosotros h2 {
-        font-size: 35px;
+        font-size: 8vw;
     }
 }
 

@@ -35,7 +35,7 @@ body.dark {
 
 .svg-snowscene {
     width: 100%;
-  }
+}
   
 .snow {
     fill: #fff;
@@ -59,7 +59,7 @@ body.dark {
     animation-duration: 3.2s;
 }
 
-  .snow:nth-child(5n) {
+.snow:nth-child(5n) {
     animation-delay: 2.8s;
 }
   
@@ -297,6 +297,12 @@ label #cancel {
 
 /* HEADER */
 
+.header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header1 img {
     width: 100%;
     -webkit-box-shadow: 0px -2px 24px -2px rgba(53,167,245,1);
@@ -308,18 +314,15 @@ label #cancel {
 
 .text-nosotros {
     position: absolute;
-    width: 250px;
-    left: 50%;
-    margin-left: -125px;
-    margin-top: -125px;
+    padding: 0 30px;
     border: 3px solid #fff;
-    border-radius: 18px;
+    border-radius: 50px;
     text-align: center;
 }
 
 .text-nosotros h2 {
     color: #fff;
-    font-size: 47px;
+    font-size: 4vw;
     font-weight: 400;
 }
 
@@ -633,7 +636,7 @@ footer {
     background-color: #030713;
     background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
