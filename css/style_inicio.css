@@ -344,6 +344,7 @@ label #cancel {
 }
 
 .separador1,
-.separador2 {
+.separador2,
+.separador3 {
     min-height: 10vh;
 }

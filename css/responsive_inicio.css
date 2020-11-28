@@ -22,7 +22,8 @@
 
 @media (min-width: 990px) {
     .separador1,
-    .separador2 {
+    .separador2,
+    .separador3 {
         display: none;
     }
 }
@@ -36,6 +37,12 @@
         color: #fff;
         text-align: center;
         font-size: 45px;
+    }
+}
+
+@media (max-width: 376px) {
+    .text-welcome a {
+        font-size: 7vw;
     }
 }
 
