@@ -298,10 +298,50 @@ label #cancel {
 
 /* PROFILE CARDS / NOSOTROS */
 
-.team-area {
+.team-area,
+.superior {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+}
+
+.superior1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-heading {
+    text-align: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.site-heading h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+  
+.site-heading h2 span {
+    color: #35a7f5;
+}
+  
+.site-heading h2::before {
+    background: #35a7f5 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    border-radius: 18px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    width: 80px;
 }
   
 .team-area .single-item {
@@ -405,7 +445,8 @@ label #cancel {
 .team-area .info {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background: #ffffff none repeat scroll 0 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/redox-02.png");
     -moz-box-shadow: 0 0 10px #cccccc;
     -webkit-box-shadow: 0 0 10px #cccccc;
     -o-box-shadow: 0 0 10px #cccccc;
@@ -437,7 +478,7 @@ label #cancel {
     -o-box-shadow: 0 0 10px #cccccc;
     box-shadow: 0 0 10px #cccccc;
     box-sizing: border-box;
-    color: #ff5a6e;
+    color: #35a7f5;
     display: inline-block;
     font-size: 20px;
     height: 50px;
@@ -456,7 +497,7 @@ label #cancel {
 }
   
 .team-area .info span {
-    color: #ff5a6e;
+    color: #f29100;
     font-family: "Poppins",sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -495,335 +536,138 @@ label #cancel {
 }
 
 
-/* PROFILE CARDS / NOSOTROS */
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-.contenedor2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.contenedor1,
-.contenedor1 .img-area,
-.social-icons a,
-.buttons button {
-    background-color: #ecf0f3;
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-    border-radius: 10px;
-    box-shadow: -3px -3px 7px #fff,
-                3px 3px 5px #ceced1;
-    transition: .3s ease all;
-}
-
-body.dark .contenedor1,
-body.dark .contenedor1 .img-area,
-body.dark .social-icons a,
-body.dark .buttons button {
-    background-color: #0a0a0a;
-    background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
-    box-shadow: -3px -3px 7px #000,
-                3px 3px 5px #323235;
-}
-
-.name,
-.about {
-    color: #000;
-    transition: .3s ease all;
-}
-
-body.dark .name,
-body.dark .about {
-    color: #fff;
-}
-
-.contenedor1 {
-    padding: 30px;
-    width: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.contenedor1 .img-area {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-area .inner-area {
-    height: calc(100% - 25px);
-    width: calc(100% - 25px);
-    border-radius: 50%;
-}
-
-.inner-area img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.contenedor1 .name {
-    font-size: 23px;
-    font-weight: 500;
-    margin: 10px 0 5px 0;
-}
-
-.contenedor1 .about {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.contenedor1 .social-icons {
-    margin: 15px 0 25px 0;
-}
-
-.social-icons a {
-    height: 40px;
-    width: 40px;
-    display: inline-flex;
-    text-decoration: none;
-    margin: 0 5px;
-    border-radius: 50%;
-    position: relative;
-}
-
-.social-icons a:hover::before,
-.buttons button:hover::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #ecf0f3;
-    border-radius: 50%;
-    box-shadow: inset -3px -3px 7px #fff,
-                inset 3px 3px 5px #ceced1;
-    transition: .3s ease all;
-}
-
-body.dark .social-icons a:hover::before,
-body.dark .buttons button:hover::before {
-    background: #161616;
-    box-shadow: inset 3px 3px 5px rgb(68, 68, 68),
-                inset -3px -3px 7px #000;
-}
-
-.buttons button:hover::before {
-    border-radius: 5px;
-    z-index: -1;
-}
-
-.buttons button a {
-    color: #F29100;
-    font-weight: 700;
-    font-size: 20px;
-}
-.buttons button a i {
-    color: #35a7f5;
-}
-
-.social-icons a i {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    line-height: 40px;
-    position: relative;
-    z-index: 5;
-}
-
-.social-icons a.instagram i {
-    color: #E1306C;
-}
-.social-icons a.facebook i {
-    color: #4267B2;
-}
-.social-icons a.twitter i {
-    color: #1DA1F2;
-}
-.social-icons a.behance i {
-    color: #053EFF;
-}
-.social-icons a.website i {
-    color: #F29100;
-}
-
-.contenedor1 .buttons {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.buttons button {
-    position: relative;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 12px 0;
-    font-size: 17px;
-    font-weight: 400;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #31344B;
-    z-index: 4;
-}
-
-.buttons button:first-child {
-    margin-right: 10px;
-}
-.buttons button:last-child {
-    margin-left: 10px;
-}
-
-
-/* NOSOTROS, MISIÓN & VISIÓN */
+/* QUE HACEMOS */
 
 .title2 {
     text-align: center;
-    margin-bottom: 10px;
+    overflow: hidden;
+    margin-top: 28px;
 }
 
 .title2 h2 {
-    font-size: 36px;
-    font-weight: 600;
-    transition: .3s ease all;
-}
-
-body.dark .title2 h2 {
-    color: #fff;
-}
-
-.nosotros1 {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
     position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+  
+.title2 h2 span {
+    color: #35a7f5;
+}
+  
+.title2 h2::before {
+    background: #35a7f5 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    border-radius: 18px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    width: 80px;
+}
+
+.quehacemos1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -30px;
+}
+
+.contenedor1 {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 1200px;
-    margin-bottom: 40px;
-}
-
-.nosotros1 .card {
-    width: 320px;
     margin: 20px;
-    padding: 40px 30px;
-    border-radius: 40px;
-    background-color: #ecf0f3;
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-    box-shadow: -3px -3px 7px #fff,
-                3px 3px 5px #ceced1;
-    transition: .3s ease all;
 }
 
-body.dark .nosotros1 .card {
-    background-color: #0a0a0a;
-    background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
-    box-shadow: -3px -3px 7px #000,
-                3px 3px 5px #323235;
-}
-
-.nosotros1 .card:hover {
-    box-shadow: inset -3px -3px 7px #fff,
-                inset 3px 3px 5px #ceced1;
-}
-
-body.dark .nosotros1 .card:hover {
-    box-shadow: inset -3px -3px 7px rgb(65, 65, 65),
-                inset 3px 3px 5px #5f5f5f;
-}
-
-.nosotros1 .card .imgBx {
+.contenedor1 .quehacemos {
     position: relative;
-    text-align: center;
+    height: 280px;
+    background: #fff;
+    display: flex;
+    width: 28%;
+    margin: 30px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
 }
 
-.nosotros1 .card .imgBx i {
-    max-width: 120px;
-    font-size: 50px;
-    color: #F29100;
+.contenedor1 .quehacemos .imgBx1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
 
-.nosotros1 .card .contentBx {
-    position: relative;
-    margin-top: 5px;
-    text-align: center;
-}
-
-.nosotros1 .card .contentBx h2 {
-    color: #F29100;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 35px;
-}
-
-.nosotros1 .card .contentBx p {
-    color: #141414;
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    transition: .3s ease all;
-}
-
-body.dark .nosotros1 .card .contentBx p {
+.contenedor1 .quehacemos .imgBx1 i {
     color: #fff;
+    font-size: 75px;
+    transition: 0.5s ease-in-out;
 }
 
-.nosotros1 .card .contentBx a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 40px;
-    color: #35a7f5;
+.contenedor1 .quehacemos:hover .imgBx1 i {
+    font-size: 55px;
+}
+
+.contenedor1 .quehacemos:hover .imgBx1 {
+    width: 130px;
+    height: 130px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background-color: #f29100;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contenedor1 .quehacemos .imgBx1::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 4.8em;
+    color: rgba(255, 255, 255, .05);
     font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    box-shadow: -3px -3px 7px #fff,
-                3px 3px 5px #ceced1;
-    transition: .3s ease all;
 }
 
-body.dark .nosotros1 .card .contentBx a {
-    box-shadow: -3px -3px 7px #000,
-                3px 3px 5px #323235;
+.contenedor1 .quehacemos .content1 {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 55px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nosotros1 .card .contentBx a:hover {
-    box-shadow: inset -3px -3px 7px #fff,
-                inset 3px 3px 5px #ceced1;
+.contenedor1 .quehacemos .content1 h3 {
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 700;
 }
-
-body.dark .nosotros1 .card .contentBx a:hover {
-    background: #161616;
-    box-shadow: inset 3px 3px 5px rgb(68, 68, 68),
-                inset -3px -3px 7px #000;
-}
-
-.nosotros1 .card a:hover span {
-    display: block;
-    transform: scale(0.98);
-}
-
-.nosotros1 .card:hover .imgBx,
-.nosotros1 .card:hover .contentBx {
-    transform: scale(0.98);
-}
-
-/* VIDEO MISIÓN */
-
 
 
 /* FOOTER */
