@@ -325,6 +325,7 @@ label #cancel {
     font-weight: 700;
     position: relative;
     text-transform: uppercase;
+    transition: .3s ease all;
     z-index: 1;
 }
   
@@ -342,6 +343,10 @@ label #cancel {
     margin-left: -40px;
     position: absolute;
     width: 80px;
+}
+
+body.dark .site-heading h2 {
+    color: #fff;
 }
   
 .team-area .single-item {
@@ -455,6 +460,16 @@ label #cancel {
     position: relative;
     text-align: center;
     z-index: 9;
+    transition: 0.3s all ease;
+}
+
+body.dark .team-area .info {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    -moz-box-shadow: 0 0 10px #292929;
+    -webkit-box-shadow: 0 0 10px #292929;
+    -o-box-shadow: 0 0 10px#292929;
+    box-shadow: 0 0 10px #292929;
 }
   
 .team-area .info .message {
@@ -494,6 +509,11 @@ label #cancel {
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: capitalize;
+    transition: 0.3s all ease;
+}
+
+body.dark .team-area .info h4 {
+    color: #fff;
 }
   
 .team-area .info span {
@@ -552,6 +572,11 @@ label #cancel {
     position: relative;
     text-transform: uppercase;
     z-index: 1;
+    transition: 0.3s all ease;
+}
+
+body.dark .title2 h2 {
+    color: #fff;
 }
   
 .title2 h2 span {
@@ -598,6 +623,12 @@ label #cancel {
     -webkit-box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
     box-shadow: 0px 14px 15px -12px rgba(0,0,0,0.75);
+    transition: 0.3s all ease;
+}
+
+body.dark .contenedor1 .quehacemos {
+    background-color: #1a1a1a;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes.png");
 }
 
 .contenedor1 .quehacemos .imgBx1 {
@@ -616,6 +647,11 @@ label #cancel {
     border-top-right-radius: 20px;
     overflow: hidden;
     transition: 0.5s ease-in-out;
+}
+
+body.dark .contenedor1 .quehacemos .imgBx1 {
+    background-color: #1d1d1d;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
 }
 
 .contenedor1 .quehacemos .imgBx1 i {
@@ -638,6 +674,11 @@ label #cancel {
     background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+body.dark .contenedor1 .quehacemos:hover .imgBx1 {
+    background-color: #f29100;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 }
 
 .contenedor1 .quehacemos .imgBx1::before {
@@ -667,6 +708,11 @@ label #cancel {
     margin-bottom: 5px;
     font-size: 26px;
     font-weight: 700;
+}
+
+body.dark .contenedor1 .quehacemos .content1 h3,
+body.dark .contenedor1 .quehacemos .content1 p {
+    color: #fff;
 }
 
 
