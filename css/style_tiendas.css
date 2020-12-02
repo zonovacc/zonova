@@ -460,6 +460,7 @@ body.dark .portfolio-filter li:hover {
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
 .select_wrap .default_option li {
@@ -488,6 +489,7 @@ body.dark .portfolio-filter li:hover {
     border-radius: 5px;
     z-index: 20;
     display: none;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
 
 .select_wrap .select_ul li {
