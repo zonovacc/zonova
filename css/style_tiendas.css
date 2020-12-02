@@ -556,13 +556,26 @@ body.dark .portfolio-filter li:hover {
 
 /* FILTRADO DE TIENDAS */
 
-.tiendas {
+.contenedor1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-content {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 7px;
 }
 
 .portfolio-hover {
     margin-top: 30px;
-    margin-left: 50px;
 }
 
 .portfolio-col {
