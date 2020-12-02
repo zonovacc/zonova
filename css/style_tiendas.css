@@ -430,6 +430,128 @@ body.dark .portfolio-filter li:hover {
 }
 
 
+    /* MENÚ FILTER RESPONSIVE */
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper1 .titulo-drop {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+.select_wrap {
+    width: 80%;
+    margin: 15px auto;
+    position: relative;
+    user-select: none;
+}
+
+.select_wrap .default_option {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.select_wrap .default_option li {
+    padding: 10px 20px;
+}
+
+.select_wrap .default_option::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.select_wrap .select_ul {
+    list-style: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 20;
+    display: none;
+}
+
+.select_wrap .select_ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.select_wrap .select_ul li:hover {
+    background: #fff4dd;
+}
+
+.select_wrap .select_ul li:first-child:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.select_wrap .select_ul li:last-child:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.select_wrap .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select_wrap .option .icono_cat {
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.select_wrap .option.todas .icono_cat {
+    color: #f29100;
+}
+.select_wrap .option.formal .icono_cat {
+    color: #06081f;
+}
+.select_wrap .option.informal .icono_cat {
+    color: #bb0b0b;
+}
+.select_wrap .option.deportiva .icono_cat {
+    color: #0f0f0f;
+}
+.select_wrap .option.ninos .icono_cat {
+    color: #5c0e8a;
+}
+.select_wrap .option.jovenes .icono_cat {
+    color: #0ead31;
+}
+.select_wrap .option.adultos .icono_cat {
+    color: #965e0b;
+}
+
+.select_wrap.active .select_ul {
+    display: block;
+}
+
+.select_wrap.active .default_option::before {
+    top: 25px;
+    transform: rotate(-225deg);
+}
+
+
 /* FILTRADO DE TIENDAS */
 
 .tiendas {

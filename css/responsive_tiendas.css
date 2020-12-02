@@ -18,3 +18,15 @@
         padding: 0 20px;
     }
 }
+
+@media (max-width: 912px) {
+    .portfolio-filter {
+        display: none;
+    }
+}
+
+@media (min-width: 913px) {
+    .wrapper1 {
+        display: none;
+    }
+}
