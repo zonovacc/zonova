@@ -43,32 +43,8 @@ $(document).ready(function() {
     /* Lista de Tiendas */
 
 let suggestions = [
-    "channel",
-    "codingLab",
-    "codingNepal",
-    "youTube",
-    "youTuber",
-    "youTube Channel",
-    "blogger",
-    "bollywood",
-    "vlogger",
-    "vechiles",
-    "facebook",
-    "freelancer",
-    "facebook Page",
-    "designer",
-    "developer",
-    "web Designer",
-    "web Developer",
-    "login Form in HTML & CSS",
-    "how to learn HTML & CSS",
-    "how to learn JavaScript",
-    "how to became Freelancer",
-    "how to became Web Designer",
-    "how to start Gaming Channel",
-    "how to start YouTube Channel",
-    "what does HTML stands for?",
-    "what does CSS stands for?",
+    "tienda 1",
+    "zamora producciones",
 ];
 
 

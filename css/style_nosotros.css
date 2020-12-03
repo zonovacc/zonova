@@ -614,7 +614,8 @@ body.dark .title2 h2 {
 .contenedor1 .quehacemos {
     position: relative;
     height: 280px;
-    background: #fff;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/debut-light.png");
     display: flex;
     width: 28%;
     margin: 30px 0;
@@ -689,7 +690,7 @@ body.dark .contenedor1 .quehacemos:hover .imgBx1 {
     width: 100%;
     text-align: center;
     font-size: 4.8em;
-    color: rgba(255, 255, 255, .05);
+    color: rgba(255, 255, 255, .1);
     font-weight: 700;
 }
 
