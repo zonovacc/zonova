@@ -29,12 +29,9 @@
 /* ----- navigation ----- */
 .vbox-title{
     width: 100%;
-    height: 40px;
     float: left;
     text-align: center;
-    line-height: 28px;
     font-size: 12px;
-    padding: 6px 50px;
     overflow: hidden;
     position: fixed;
     display: none;
@@ -44,15 +41,13 @@
 .vbox-close{
     cursor: pointer;
     position: fixed;
-    top: -1px;
+    top: 0;
     right: 0;
-    width: 50px;
-    height: 40px;
-    padding: 6px;
+    width: 95px;
+    height: 95px;
     display: block;
-    background-position:10px center;
     overflow: hidden;
-    font-size: 24px;
+    font-size: 75px;
     line-height: 1;
     text-align: center;
     z-index: 99;
@@ -112,9 +107,11 @@
 }
 .vbox-next span, .vbox-prev span{
     position: relative;
-    width: 20px;
-    height: 20px;
-    border: 2px solid transparent;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 4px solid transparent;
     border-top-color: #B6B6B6;
     border-right-color: #B6B6B6;
     text-indent: -100px;

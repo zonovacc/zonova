@@ -7,9 +7,12 @@
 }
 
 body {
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
     overflow-x: hidden;
     background-size: cover no-repeat;
     background-attachment: fixed;
+    transition: 0.3s all ease;
 }
 body::-webkit-scrollbar{
     width: 13px;
@@ -17,9 +20,14 @@ body::-webkit-scrollbar{
     background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #f29100;
+    background-color: #35a7f5;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     border-radius: 4px;
+}
+
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
 }
 
 /* SIDEBAR MENÚ */
@@ -114,6 +122,58 @@ label #cancel {
 }
 #check:checked ~ .sidebar {
     left: 0;
+}
+
+.modon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.switch {
+    background: #343D5B;
+    font-size: 20px;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: #f29100;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
 }
 
 
@@ -218,16 +278,23 @@ label #cancel {
     grid-template-columns: 10% 1fr 10%;
     grid-template-areas: 
     ". header .";
-    background: linear-gradient(rgba(23, 25, 29, 0.8), rgba(23, 25, 29, 0.8)), url(../img/back3.jpg);
+    background: linear-gradient(rgba(23, 25, 29, 0.8), rgba(23, 25, 29, 0.8)), url(../img/back1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
 }
 
 .wrapper .top__section h1 {
     font-size: 48px;
     margin-bottom: 20px;
     color: #fff;
+}
+
+.wrapper .top__section h1 span {
+    color: #f29100;
 }
 
 .wrapper .top__section p {
@@ -257,10 +324,13 @@ header p {
 }
 
 header button {
-    width: 131px;
+    width: 271px;
     padding: 12px 0;
     background: #35a7f5;
+    color: #000;
+    font-size: 20px;
     border: none;
+    border-radius: 10px;
 }
 
 .content__section {
@@ -282,7 +352,19 @@ header button {
 }
 
 .playlist__title {
-    margin: 30px 0;
+    margin: 40px 0 10px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s all ease;
+}
+
+body.dark .playlist__title {
+    color: #fff;
+}
+
+.playlist__title span {
+    color: #f29100;
 }
 
 .videos {
@@ -298,6 +380,17 @@ header button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px -5px rgba(0,0,0,0.75);
+    transition: 0.3s all ease;
+}
+
+body.dark .video {
+    -webkit-box-shadow: 0px 0px 13px -5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 13px -5px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 13px -5px rgba(255,255,255,0.75);
 }
 
 .video:hover {
@@ -318,4 +411,33 @@ header button {
 
 .video i:hover {
     opacity: 1;
+}
+
+.vbox-close {
+    width: 30px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #030713;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer span {
+    color: #F29100;
 }

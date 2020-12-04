@@ -5,13 +5,27 @@ $(window).on("load", function(){
 });
 
 
+/* MODO NOCTURNO */
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+});
+
+
 /* VENOBOX */
 
 $(document).ready(function(){
     $('.venobox').venobox({
-        closeColor: '#f4f4f4',
-        spinColor: '#f4f4f4',
-        closeBackground: '#17191D',
-        overlayColor: 'rgba(23, 25, 19, 0.8)',
+        arrowsColor: '#f29100',
+        bgcolor: '#000',
+        closeColor: '#35a7f5',
+        frameWidth: '30px',
+        overlayColor: 'rgba(0, 0, 0, 0.9)',
+        spinColor: '#f29100',
+        spinner: 'three-bounce',
+        share: ['facebook', 'twitter', 'linkedin'],
     }); 
 });
