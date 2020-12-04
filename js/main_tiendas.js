@@ -7,20 +7,22 @@ $(window).on("load", function(){
 
 /* FILTER */
 
-$('.portfolio-content').isotope({
-    itemSelector: '.portfolio-item',
-    layoutMode: 'fitRows'
-});
-
-$('.filter li').click(function(){
-    $('.filter li').removeClass('active');
-    $(this).addClass('active');
-  
-    var selector = $(this).attr("data-filter");
-    $(".portfolio-content").isotope({
-        filter: selector
+$(window).load(function () {
+    $('.portfolio-content').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
     });
-    return false
+
+    $('.filter li').click(function(){
+        $('.filter li').removeClass('active');
+        $(this).addClass('active');
+    
+        var selector = $(this).attr("data-filter");
+        $(".portfolio-content").isotope({
+            filter: selector
+        });
+        return false
+    });
 });
 
     /* RESPONSIVE */

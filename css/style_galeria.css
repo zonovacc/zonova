@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb{
     width: 240px;
     height: 100%;
     background: #1b1b1b;
+    z-index: 21;
     transition: all .5s ease;
 }
 
@@ -80,7 +81,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 label #btn, label #cancel {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: #f29100;
     height: 45px;
@@ -92,6 +93,7 @@ label #btn, label #cancel {
     border-radius: 5px;
     margin: 15px 30px;
     border: 1px solid #b36b00;
+    z-index: 20;
     transition: all .5s ease;
 }
 
@@ -196,4 +198,124 @@ label #cancel {
     left: 85px;
     width: 60px;
     transform: rotate(135deg);
+}
+
+
+/* HEADER */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top__section"
+    "content__section";
+}
+
+.top__section {
+    grid-area: top__section;
+    min-height: 370px;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: 
+    ". header .";
+    background: linear-gradient(rgba(23, 25, 29, 0.8), rgba(23, 25, 29, 0.8)), url(../img/back3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper .top__section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.wrapper .top__section p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.wrapper .top__section button {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.wrapper .top__section button:hover {
+    transform: scale(1.02);
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p {
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+
+header button {
+    width: 131px;
+    padding: 12px 0;
+    background: #35a7f5;
+    border: none;
+}
+
+.content__section {
+    grid-area: content__section;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: 
+    ". playlist__one ."
+    ". playlist__two .";
+    margin-bottom: 60px;
+}
+
+.playlist__one {
+    grid-area: playlist__one;
+}
+
+.playlist__two {
+    grid-area: playlist__two;
+}
+
+.playlist__title {
+    margin: 30px 0;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.video {
+    height: 180px;
+    grid-column-start: span 3;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video:hover {
+    transform: scale(1.02);
+}
+
+.video i {
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f4f4f4;
+    opacity: 0.85;
+    transition: all 0.3s ease 0s;
+}
+
+.video i:hover {
+    opacity: 1;
 }
