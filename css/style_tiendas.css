@@ -589,7 +589,7 @@ label #cancel {
   border: 2px solid #f29100;
   padding: 10px 20px;
   border-radius: 15px;
-  transition: .4s;
+  transition: .1s;
 }
 
 .texto-tienda a:hover {

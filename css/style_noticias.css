@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
+
 /* SIDEBAR MENÚ */
 
 .sidebar {
@@ -29,7 +30,9 @@ body::-webkit-scrollbar-thumb{
     left: -240px;
     width: 240px;
     height: 100%;
-    background: #1b1b1b;
+    background-color: #1b1b1b;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+    z-index: 100;
     transition: all .5s ease;
 }
 
@@ -38,7 +41,8 @@ body::-webkit-scrollbar-thumb{
     font-size: 28px;
     line-height: 70px;
     text-align: center;
-    background-color: #141414;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
     user-select: none;
 }
 
@@ -80,7 +84,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 label #btn, label #cancel {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: #f29100;
     height: 45px;
@@ -93,6 +97,7 @@ label #btn, label #cancel {
     margin: 15px 30px;
     border: 1px solid #b36b00;
     transition: all .5s ease;
+    z-index: 1000;
 }
 
 label #cancel {
@@ -112,6 +117,65 @@ label #cancel {
 }
 #check:checked ~ .sidebar {
     left: 0;
+}
+
+.modon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.switch {
+    background: #343D5B;
+    font-size: 20px;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: #f29100;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.likefb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 
@@ -197,3 +261,6 @@ label #cancel {
     width: 60px;
     transform: rotate(135deg);
 }
+
+
+/*  */
