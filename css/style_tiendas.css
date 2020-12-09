@@ -16,9 +16,9 @@ html * {
 body {
   background-color: #f4f4f4;
   background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+  color: #000;
   overflow-x: hidden;
   font-size: 1.6rem;
-  color: #331d35;
   font-family: 'Roboto Condensed', sans-serif;
   transition: .3s ease all;
 }
@@ -33,8 +33,13 @@ body::-webkit-scrollbar-thumb{
   border-radius: 4px;
 }
 
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    color: #fff;
+}
+
 a {
-  color: #120f3b;
   text-decoration: none;
 }
 
@@ -228,6 +233,8 @@ label #cancel {
 
 .switch {
   background: #343D5B;
+  width: 60px;
+  height: 30px;
   font-size: 20px;
   border-radius: 1000px;
   border: none;
@@ -235,6 +242,7 @@ label #cancel {
   cursor: pointer;
   display: flex;
   outline: none;
+  transition: .1s all ease;
 }
 
 .switch::after {
@@ -356,6 +364,12 @@ label #cancel {
   background-image: url("https://www.transparenttextures.com/patterns/ecailles.png");
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   z-index: 1;
+  transition: 0.3s all ease;
+}
+
+body.dark .cd-tab-filter-wrapper {
+  background-color: #001338;
+  background-image: url("https://www.transparenttextures.com/patterns/ecailles.png");
 }
 
 .cd-tab-filter-wrapper:after {
@@ -401,6 +415,12 @@ label #cancel {
   left: 0;
   background-color: #ffffff;
   box-shadow: inset 0 -2px 0 #0a0820;
+  transition: 0.3s all ease;
+}
+
+body.dark .cd-tab-filter ul {
+  background-color: #001338;
+  background-image: url("https://www.transparenttextures.com/patterns/ecailles.png");
 }
 
 .cd-tab-filter li {
@@ -424,6 +444,10 @@ label #cancel {
 .cd-tab-filter a.selected {
   background: #120f3b;
   color: #ffffff;
+}
+
+body.dark .cd-tab-filter a.selected {
+  background: #002c4d;
 }
 
 .cd-tab-filter.is-open::after {
@@ -477,16 +501,29 @@ label #cancel {
     color: #9a9a9a;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    transition: 0.3s all ease;
+  }
+  body.dark .cd-tab-filter a {
+    color: #fff;
   }
   .no-touch .cd-tab-filter a:hover {
     color: #41307c;
+  }
+  body.dark .cd-tab-filter a:hover {
+    color: #f29100;
   }
   .cd-tab-filter a.selected {
     background: transparent;
     color: #41307c;
     /* create border bottom using box-shadow property */
     box-shadow: inset 0 -2px 0 #41307c;
+    transition: 0.3s all ease;
+  }
+  body.dark .cd-tab-filter a.selected {
+    background: transparent;
+    color: #f29100;
+    box-shadow: inset 0 -2px 0 #f29100;
   }
   .cd-tab-filter.is-open ul li {
     display: inline-block;
@@ -523,6 +560,10 @@ label #cancel {
   border-radius: 25px;
 }
 
+body.dark .cd-gallery li {
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3);
+}
+
 .cd-gallery li.gap {
   /* Utilizado en combinación con text-align: Justificar para alinear los elementos */
   opacity: 0;
@@ -552,6 +593,12 @@ label #cancel {
   border-top-right-radius: 25px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  transition: 0.3s all ease;
+}
+
+body.dark .hover-tienda {
+  background-color: #002c4d;
+background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
 }
 
 .imagen-tienda {
@@ -669,6 +716,12 @@ label #cancel {
   -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
   -moz-transition: -moz-transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
+  transition: 0.3s all ease;
+}
+
+body.dark .cd-filter {
+  background-color: #00071a;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
 }
 
 .cd-filter::before {
@@ -679,7 +732,8 @@ label #cancel {
   left: 0;
   height: 50px;
   width: 100%;
-  background-color: #0b071b;
+  background-color: #00071a;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   z-index: 2;
 }
 
@@ -697,7 +751,8 @@ label #cancel {
   color: #ffffff;
   font-size: 1.7rem;
   text-align: center;
-  background: #35a7f5;
+  background-color: #35a7f5;
+  background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
@@ -707,6 +762,7 @@ label #cancel {
 
 .no-touch .cd-filter .cd-close:hover {
   background: #2677ad;
+  background-image: url("https://www.transparenttextures.com/patterns/zig-zag.png");
 }
 
 .cd-filter.filter-is-visible {
@@ -756,9 +812,9 @@ label #cancel {
     width: auto;
     left: 2%;
     text-indent: 0;
-    color: #636363;
+    color: #969696;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     padding-left: 24px;
     background-position: left center;
@@ -766,8 +822,15 @@ label #cancel {
     -moz-transition: color 0.3s;
     transition: color 0.3s;
   }
+  body.dark .cd-filter-trigger {
+    color: #e0e0e0;
+    font-weight: 700;
+  }
   .no-touch .cd-filter-trigger:hover {
     color: #0b071b;
+  }
+  body.dark .cd-filter-trigger:hover {
+    color: #f29100;
   }
   .cd-filter-trigger.filter-is-visible, .cd-filter-trigger.filter-is-visible:hover {
     color: #ffffff;
@@ -797,8 +860,16 @@ label #cancel {
   cursor: pointer;
 }
 
+body.dark .cd-filter-block h4 {
+  color: #fff;
+}
+
 .no-touch .cd-filter-block h4:hover {
   color: #1b1047;
+}
+
+body.dark .cd-filter-block h4:hover {
+  color: #f29100;
 }
 
 .cd-filter-block h4::before {
@@ -832,7 +903,6 @@ label #cancel {
 .cd-filter-block .radio-label::before,
 .cd-filter-block .checkbox-label::before {
   /* shared style for input elements */
-  font-family: "Open Sans", sans-serif;
   border-radius: 0;
   background-color: #ffffff;
   border: 2px solid #e6e6e6;
@@ -859,6 +929,12 @@ label #cancel {
   background-color: #ffffff;
   border-color: #0b071b;
   border-radius: 10px;
+}
+
+body.dark .cd-filter-block input[type='search']:focus,
+body.dark .cd-filter-block input[type='text']:focus,
+body.dark .cd-filter-block select:focus {
+  border-color: #35a7f5;
 }
 
 .cd-filter-block input[type='search'] {
@@ -989,6 +1065,12 @@ label #cancel {
 .cd-filter-block input[type=checkbox]:checked + label::before {
   border-color: #41307c;
   background-color: #41307c;
+}
+
+body.dark .cd-filter-block input[type=radio]:checked + label::before,
+body.dark .cd-filter-block input[type=checkbox]:checked + label::before {
+  border-color: #f29100;
+  background-color: #f29100;
 }
 
 .cd-filter-block input[type=radio]:checked + label::after,

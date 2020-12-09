@@ -140,6 +140,7 @@ label #cancel {
     cursor: pointer;
     display: flex;
     outline: none;
+    transition: .1s all ease;
 }
 
 .switch::after {
