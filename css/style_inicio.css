@@ -99,6 +99,7 @@ label #btn, label #cancel {
     border-radius: 5px;
     margin: 15px 30px;
     border: 1px solid #b36b00;
+    z-index: 99;
     transition: all .5s ease;
 }
 
@@ -130,6 +131,7 @@ label #cancel {
 
 .content1 {
     display: flex;
+    min-height: 100vh;
 }
 
 
@@ -219,6 +221,52 @@ label #cancel {
 
 /* TEXT & VIDEO */
 
+.slider1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -52px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    width: 80%;
+    height: 30%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    color: rgb(134, 134, 134);
+    padding: 10px;
+}
+
+.slider h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 11px;
+}
+.slider h3 b {
+    font-weight: 700;
+}
+
+.slider img {
+    margin-right: 5px;
+}
+.slider h4 {
+    font-size: 20px;
+}
+.slider i {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #13093d;
+    font-size: 25px;
+}
+
 .text-welcome {
     display: flex;
     justify-content: center;
@@ -239,6 +287,10 @@ label #cancel {
     font-size: 30px;
 }
 
+.text-welcome .botons {
+    display: flex;
+}
+
 .text-welcome a {
     position: relative;
     text-transform: uppercase;
@@ -249,14 +301,28 @@ label #cancel {
     letter-spacing: 1px;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 55px;
-    font-size: 35px;
+    padding: 10px 35px;
+    margin: 7px;
+    font-size: 30px;
     border-radius: 20px;
     transition: all .3s ease;
 }
 
 .text-welcome a:hover {
     background: #f29100;
+}
+
+.app1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app i {
+    margin-left: 4px;
+}
+
+.app:hover {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
 }
 

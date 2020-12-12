@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_registro.css">
+    <link rel="stylesheet" href="css/responsive_registro.css">
+    <title>Registo | Zonova</title>
+</head>
+<body>
+    <div class="container-fluid contenedor">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <form method="post" autocomplete="off" name="google-sheet">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu correo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe aquí tu teléfono" required>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyx_2_mu0fYSkmIXdVMFJ30vwHFFJuEDV3L425DcaNQH024tpmK/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>

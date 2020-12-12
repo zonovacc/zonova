@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+}
+body::-webkit-scrollbar{
+    width: 13px;
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #35a7f5;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    border-radius: 4px;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.contact-box {
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
+    transition: .3s ease all;
+}
+
+body.dark .contact-box {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    -webkit-box-shadow: 0px 0px 20px -7px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 20px -7px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 20px -7px rgba(255,255,255,0.5);
+}
+
+.left {
+    height: 100%;
+    background: url(../img/shop_zonova.jpg) no-repeat center;
+    background-size: cover;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+.right h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    transition: .3s ease all;
+}
+
+body.dark .right h2 {
+    color: #fff;
+}
+
+.right h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #35a7f5;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s ease all;
+}
+
+body.dark .field {
+    background-color: rgba(31, 31, 31, 0.6);
+    color: #fff;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: .3s ease all;
+}
+
+body.dark .field:hover {
+    background-color: rgba(117, 117, 117, 0.3);
+    color: #fff;
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(242, 145, 0, 0.47);
+    transition: .3s ease all;
+}
+
+body.dark .field:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    background-color: #eb8d00;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

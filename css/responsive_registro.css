@@ -1,0 +1,10 @@
+/* FORMULARIO DE CONTACTO */
+
+@media (max-width: 860px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        height: 200px;
+    }
+}
