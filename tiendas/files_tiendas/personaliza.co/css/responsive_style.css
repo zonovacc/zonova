@@ -1,3 +1,35 @@
+/* HEADER */
+
+@media (max-width: 860px) {
+    .header1 img {
+        width: 200%;
+        height: 13vh;
+    }
+
+    .text-nosotros h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-nosotros h2 {
+        font-size: 8vw;
+    }
+}
+
+@media (min-width: 861px) {
+    .text-nosotros h2 br {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) {
+    .br1 {
+        display: none;
+    }
+}
+
+
 /* HERO AREA */
 
 @media (max-width: 991px) {
