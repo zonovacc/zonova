@@ -46,6 +46,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .botons {
+        flex-direction: column;
+    }
+}
+
 
 /* POPUP VIDEO/TEASER */
 
