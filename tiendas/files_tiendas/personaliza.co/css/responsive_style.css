@@ -3,20 +3,11 @@
 @media (max-width: 991px) {
     .hero {
         flex-direction: column;
+        padding: 35px;
     }
 
-    .left,
     .right {
         width: 100%;
-    }
-
-    .left {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-
-    .right {
-        margin-top: -30px;
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -29,6 +20,10 @@
     .redes {
         text-align: center;
     }
+    .redes {
+        margin-top: 53px;
+        margin-bottom: -25px;
+    }
     .redes ul {
         display: flex;
         justify-content: center;
@@ -36,6 +31,24 @@
     .redes a i {
         margin-right: 15px;
         margin-left: 15px;
+    }
+}
+
+
+/* EN PROMOCIÓN */
+
+@media (max-width: 991px) {
+    .wrapper1 {
+        flex-direction: column;
+    }
+}
+
+
+/* ANUNCIO */
+
+@media (max-width: 864px) {
+    .anuncio {
+        display: none;
     }
 }
 

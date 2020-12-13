@@ -311,11 +311,7 @@ label #cancel {
     display: flex;
     background-color: #141414;
     background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
-}
-
-.left {
-    width: 60%;
-    padding: 60px 90px;
+    padding: 40px 20px 40px 100px;
 }
 
 .nombreshop h2 {
@@ -393,7 +389,7 @@ label #cancel {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 70%;
     padding: 50px;
     margin-right: 35px;
 }
@@ -439,7 +435,7 @@ label #cancel {
     top: -50%;
     width: 100%;
     height: 100%;
-    background: #c3aa74;
+    background: #4fa7cc;
     transform: skewY(345deg);
     transition: 0.5s;
 }
@@ -510,9 +506,9 @@ label #cancel {
     opacity: 0;
     padding: 10px 30px;
     margin-top: 15px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    background: #c3aa74;
+    background: #ffcb04;
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -520,7 +516,8 @@ label #cancel {
 }
 
 .card .contentBx .buy:hover {
-    background: #927e53;
+    background: #a08104;
+    color: #fff;
 }
 
 .card:hover .contentBx .buy {
@@ -619,7 +616,7 @@ label #cancel {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background-color: #c4aa72d7;
+    background-color: #ffcd0494;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,7 +704,7 @@ label #cancel {
 article:nth-child(1),
 article:nth-child(2),
 article:nth-child(3) {
-    background-color: #c3aa74;
+    background-color: #4fa7cc;
 }
 
 .card1 {
@@ -839,11 +836,11 @@ article:nth-child(3) {
 }
 
 .contenedor1 header .categorias a:hover {
-    color: #c3aa74;
+    color: #4fa7cc;
 }
 
 .contenedor1 header .categorias a.activo {
-    color: #c3aa74;
+    color: #4fa7cc;
     font-weight: 800;
 }
 
@@ -1015,19 +1012,19 @@ article:nth-child(3) {
     margin-top: 55px;
 }
 
-/*.fa-instagram {
+.instagram2 i {
     border-radius: 50%;
     background: #0a1318;
     color: #fff;
     padding: 15px;
     font-size: 19px;
     margin-right: 20px;
-    transition: 0.5s ease all;
+    transition: .5s ease all;
 }
 
-.fa-instagram:hover {
+.instagram2 i:hover {
     background: linear-gradient(200deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
-}*/
+}
 
 .fa-share {
     border-radius: 50%;
@@ -1047,7 +1044,7 @@ article:nth-child(3) {
 
 .hide {
     position: absolute;
-    background: #c3aa74;
+    background: #ffcb04;
     box-shadow: 0 4px 5px rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
@@ -1067,7 +1064,7 @@ article:nth-child(3) {
     width: 0;
     height: 0;
     border: 15px solid transparent;
-    border-top-color: #c3aa74;
+    border-top-color: #ffcb04;
     border-bottom: 0;
     margin-bottom: -15px;
     margin-left: -15px;
