@@ -26,8 +26,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-
-
 /* SIDEBAR MENÚ */
 
 .sidebar {
@@ -307,72 +305,102 @@ label #cancel {
 }
 
 
-/* INFO TIENDA */
+/* HERO AREA */
 
-.container1 {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: -4px;
+.hero {
+    display: flex;
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
 }
 
-.logotienda {
-    width: 100%;
-    background: #c3aa74;
-    height: 350px;
+.left {
+    width: 60%;
+    padding: 60px 90px;
 }
 
-.logotienda img {
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-    width: 29%;
+.nombreshop h2 {
+    font-size: 4vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #464646;
+    background: url(../img/back.png);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    background-position: 100px 0;
+    animation: image 20s linear infinite;
 }
 
-.logotienda p {
-    text-align: center;
+@keyframes image {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.nombreshop p {
+    margin-top: 8px;
     color: #fff;
-    font-size: 18px;
-    padding: 0 60px;
-    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
 }
 
-.imagen1 {
-    width: 100%;
-    background: #c3aa74;
+.nombreshop p a {
+    text-decoration: none;
+    color: #ffcb04;
+    transition: .2s all ease;
 }
 
-.imagen1 img {
-    width: 100%;
-    height: 100%;
+.nombreshop p a:hover {
+    color: #4fa7cc;
 }
 
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-/* NOMBRE TIENDA */
+.redes ul {
+    display: flex;
+}
 
-.nombretienda {
-    width: 100%;
+.redes ul li {
+    list-style: none;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes a i {
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 26px;
+    transition: .2s all ease;
+}
+
+.redes .instagram1 i:hover,
+.redes .facebook1 i:hover,
+.redes .whatsapp1 i:hover,
+.redes .web1 i:hover {
+    color: #ffcb04;
+}
+
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 40%;
+    padding: 50px;
+    margin-right: 35px;
 }
 
-.nombre1 {
-    width: 300px;
-    height: 70px;
-    background: #fff;
-    border-radius: 10px;
-    margin-top: -38px;
-    -webkit-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.75);
-}
-
-.nombre1 h2 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 70px;
+.right img {
+    width: 100vw;
+    max-width: 100%;
 }
 
 
@@ -987,7 +1015,7 @@ article:nth-child(3) {
     margin-top: 55px;
 }
 
-.fa-instagram {
+/*.fa-instagram {
     border-radius: 50%;
     background: #0a1318;
     color: #fff;
@@ -999,7 +1027,7 @@ article:nth-child(3) {
 
 .fa-instagram:hover {
     background: linear-gradient(200deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
-}
+}*/
 
 .fa-share {
     border-radius: 50%;
