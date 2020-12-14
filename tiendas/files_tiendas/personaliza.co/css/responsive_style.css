@@ -92,7 +92,7 @@
 
     .popup-card .product-img img {
         left: initial;
-        max-width: 100%;
+        max-width: 70%;
     }
 
     .popup-card .info-pop {
@@ -110,12 +110,12 @@
     }
 
     .popup-card .info-pop h2 span {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .popup-card .info-pop p {
         margin: 5px;
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .popup-card .info-pop .price-pop {
@@ -132,6 +132,7 @@
     .popup-card .close-btn {
         z-index: 4;
         font-size: 28px;
+        color: #fff;
     }
 }
 
