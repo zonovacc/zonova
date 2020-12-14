@@ -413,6 +413,7 @@ label #cancel {
 
 .wrapper1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -510,6 +511,7 @@ label #cancel {
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -538,6 +540,145 @@ label #cancel {
     color: #fff;
     text-transform: uppercase;
     padding: 10px 0px;
+}
+
+.popup-view {
+    z-index: 2;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.popup-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.popup-card .product-img {
+    z-index: 2;
+    background-color: #040012;
+    background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.popup-card .product-img img {
+    z-index: 2;
+    position: relative;
+    width: 350px;
+    left: -50px;
+}
+
+.popup-card .info-pop {
+    z-index: 2;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.popup-card .close-btn {
+    color: #131313;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.popup-card .info-pop h2 {
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.popup-card .info-pop h2 span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.popup-card .info-pop p {
+    font-size: 17px;
+    margin: 10px;
+}
+
+.popup-card .info-pop .price-pop {
+    font-size: 45px;
+    font-size: 300;
+    margin: 10px;
+}
+.popup-card .info-pop .price-pop1 {
+    text-decoration: line-through;
+    font-size: 25px;
+    font-size: 300;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.popup-card .info-pop .add-shop-btn {
+    color: #fff;
+    background: #387d9b;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    margin: 40px 0 auto;
+    padding: 10px 50px;
+    border-radius: 20px;
+    transition: .2s all ease;
+}
+
+.popup-card .info-pop .add-shop-btn:hover {
+    letter-spacing: 1px;
+    transform: scaleY(1.1);
+}
+
+.popup-card .info-pop .red1tienda {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup-card .info-pop .red1tienda li {
+    list-style: none;
+}
+
+.popup-card .info-pop .red1tienda li a {
+    color: #000;
+    font-size: 26px;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 
@@ -820,7 +961,6 @@ article:nth-child(3) {
     transform: rotate(45deg);
     -webkit-appearance: none;
     cursor: pointer;
-    transition: .1s all ease;
 }
 
 .card-price input[type="checkbox"]::before {
@@ -990,7 +1130,7 @@ article:nth-child(3) {
 
 /* TABS */
 
-.texto6 {
+/*.texto6 {
     width: 100%;
     margin-top: 49px;
     margin-bottom: 20px;
@@ -999,74 +1139,7 @@ article:nth-child(3) {
 
 .texto6 h3 {
     font-size: 32px;
-}
-
-.tabs {
-    width: 800px;
-    height: 250px;
-    background: #f5f5f5;
-    padding: 20px 30px;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 5px 10px 5px #ccc;
-}
-
-.tabs .tab-header {
-    height: 6 0px;
-    display: flex;
-    align-items: center;
-}
-
-.tabs .tab-header > div {
-    width: calc(100% / 6);
-    text-align: center;
-    color: #888;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-}
-
-.tabs .tab-header > div > i {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.tabs .tab-header > div.active {
-    color: #00acee;
-}
-
-.tabs .tab-indicator {
-    position: relative;
-    width: calc(100% / 6);
-    height: 5px;
-    background: #00acee;
-    left: 0px;
-    border-radius: 5px;
-    transition: all .2s ease-in-out;
-}
-
-.tabs .tab-body {
-    position: relative;
-    height: calc(100% - 60px);
-    padding: 10px 5px;
-}
-
-.tabs .tab-body > div {
-    position: absolute;
-    top: -200%;
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity .2s ease-in-out 0ms,
-                transform .2s ease-in-out 0ms;
-}
-
-.tabs .tab-body > div.active {
-    top: 0px;
-    opacity: 1;
-    transform: scale(1);
-}
+}*/
 
 
 /* CONTACTO */

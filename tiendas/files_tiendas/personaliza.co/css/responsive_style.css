@@ -73,9 +73,65 @@
 
 /* EN PROMOCIÓN */
 
-@media (max-width: 991px) {
-    .wrapper1 {
+@media (max-width: 900px) {
+    .popup-card {
         flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+
+    .popup-card .product-img {
+        z-index: 3;
+        width: 100%;
+        height: 350px;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .popup-card .product-img img {
+        left: initial;
+        max-width: 100%;
+    }
+
+    .popup-card .info-pop {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .popup-card .info-pop h2 {
+        margin: 20px 5px 5px 5px;
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    .popup-card .info-pop h2 span {
+        font-size: 12px;
+    }
+
+    .popup-card .info-pop p {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .popup-card .info-pop .price-pop {
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    .popup-card .info-pop .add-shop-btn {
+        margin: 5px auto;
+        padding: 5px 40px;
+        font-size: 15px;
+    }
+
+    .popup-card .close-btn {
+        z-index: 4;
+        font-size: 28px;
     }
 }
 

@@ -15,6 +15,31 @@ btnSwitch.addEventListener('click', () => {
 });
 
 
+/* EN PROMOCIÓN */
+
+var popupViews = document.querySelectorAll('.popup-view');
+var popupBtns = document.querySelectorAll('.popup-btn');
+var closeBtns = document.querySelectorAll('.close-btn');
+
+var popup = function(popupClick) {
+	popupViews [popupClick].classList.add('active');
+}
+
+popupBtns.forEach((popupBtn, i) => {
+	popupBtn.addEventListener("click", () => {
+		popup(i);
+	});
+});
+
+closeBtns.forEach((closeBtn) => {
+	closeBtn.addEventListener("click", () => {
+		popupViews.forEach((popupView) => {
+			popupView.classList.remove('active');
+		});
+	});
+});
+
+
 /* SLIDER DE PRODUCTOS */
 
 $(document).ready(function() {
@@ -82,22 +107,7 @@ const grid = new Muuri('.grid', {
 	
 /* TABS */
 
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
 
-let tabsPane = tabHeader.getElementsByTagName("div");
-
-for(let i=0;i<tabsPane.length;i++){
-  tabsPane[i].addEventListener("click",function(){
-    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabBody.getElementsByClassName("active")[0].classList.remove("active");
-    tabBody.getElementsByTagName("div")[i].classList.add("active");
-    
-    tabIndicator.style.left = 'calc(calc(100% / 6) * ${i})';
-  });
-}
 
 	
 /* CONTACTO */

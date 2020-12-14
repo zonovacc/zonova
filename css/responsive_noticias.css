@@ -1,0 +1,9 @@
+/* MARQUEE */
+
+@media (max-width: 430px) {
+    .marquee1 {
+        width: 85%;
+        height: 60px;
+        font-size: 22px;
+    }
+}
