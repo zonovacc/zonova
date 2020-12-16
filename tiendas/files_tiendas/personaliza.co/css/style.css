@@ -1146,7 +1146,7 @@ article:nth-child(3) {
 
 .texto5 {
     width: 100%;
-    margin-top: 49px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1155,68 +1155,196 @@ article:nth-child(3) {
     font-size: 32px;
 }
 
+.contacto-shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
 .contactot {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 25px;
 }
 
-.box2 {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
-    padding: 10px;
-    text-align: center;
-    max-width: 470px;
-}
-
-.box2 img {
-    width: 400px;
-    max-width: 100%;
-}
-
-.box2 h2 {
-    margin: 10px 0 0;
-    font-size: 27px;
-}
-
-.box2 p {
-    margin: 10px;
-}
-
-.form-control {
-    position: relative;
-    margin: 20px 30px 40px 30px;
-}
-
-.correot {
-    border: 0;
-    border-radius: 50px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
-    font-size: 17px;
-    height: 42px;
-    padding: 12px 15px;
-    width: 100%;
-}
-
-.btn {
-    background-color: #0a1318;
+.contactot .text-fb i {
     color: #fff;
-    border: 0;
-    border-radius: 50px;
-    font-size: 17px;
-    height: 42px;
-    padding: 12px 25px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
+    background: linear-gradient(45deg, rgba(0,178,255,1) 0%, rgba(0,106,255,1) 0%, rgba(221,42,123,1) 100%);
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-.correot:focus, .btn:focus {
-    outline: 0;
+.contactot .text-fb {
+    color: #000;
+    font-size: 20px;
 }
+
+.contactot a.fb-message-blue {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+    width: 275px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    -webkit-transition: all ease .15s;
+    -o-transition: all ease .15s;
+    -moz-transition: all ease .15s;
+    transition: all ease .15s;
+}
+
+.contactot a.fb-message-blue:hover {
+    background-color: #2093ff;
+    border: 1px solid #2093ff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.contactot a.fb-message-blue:focus {
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+}
+
+.contactot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+.contactot1 .text-in i {
+    color: #fff;
+    background: linear-gradient(315deg, rgba(245,133,41,1) 0%, rgba(254,218,119,1) 9%, rgba(221,42,123,1) 45%, rgba(0,106,255,1) 93%, rgba(0,178,255,1) 100%);
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contactot1 .text-in {
+    color: #000;
+    font-size: 20px;
+}
+
+.contactot1 a.in-message-normal {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #DD2A7B;
+    border: 1px solid #DD2A7B;
+    width: 275px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    -webkit-transition: all ease .15s;
+    -o-transition: all ease .15s;
+    -moz-transition: all ease .15s;
+    transition: all ease .15s;
+}
+
+.contactot1 a.in-message-normal:hover {
+    background-color: #ec418e;
+    border: 1px solid #ec418e;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.contactot1 a.in-message-normal:focus {
+    background-color: #bd1d65;
+    border: 1px solid #bd1d65;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+}
+
+.contactot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contactot2 .text-wp i {
+    color: #fff;
+    background: #25D366;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contactot2 .text-wp {
+    color: #000;
+    font-size: 20px;
+}
+
+.contactot2 a.wp-message-normal {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #25D366;
+    border: 1px solid #25D366;
+    width: 275px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 10px;
+    -webkit-transition: all ease .15s;
+    -o-transition: all ease .15s;
+    -moz-transition: all ease .15s;
+    transition: all ease .15s;
+}
+
+.contactot2 a.wp-message-normal:hover {
+    background-color: #37dd74;
+    border: 1px solid #37dd74;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.contactot2 a.wp-message-normal:focus {
+    background-color: #17ac4e;
+    border: 1px solid #17ac4e;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+}
+
 
     /* COMPARTIR */
 
@@ -1224,21 +1352,7 @@ article:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
-}
-
-.instagram2 i {
-    border-radius: 50%;
-    background: #0a1318;
-    color: #fff;
-    padding: 15px;
-    font-size: 19px;
-    margin-right: 20px;
-    transition: .5s ease all;
-}
-
-.instagram2 i:hover {
-    background: linear-gradient(200deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    margin-top: 115px;
 }
 
 .fa-share {
@@ -1268,7 +1382,8 @@ article:nth-child(3) {
     height: 10px;
     border-radius: 13px;
     margin-top: -132px;
-    margin-left: -98px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .hide::after {
