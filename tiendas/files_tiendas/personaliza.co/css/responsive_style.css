@@ -203,9 +203,21 @@
     .pasos .paso a p {
         display: none;
     }
+}
 
+@media (max-width: 350px) {
     .pasos .paso {
-        margin: 0em;
+        padding: 1em 0.5em;
+    }
+}
+@media (max-width: 400px) {
+    .pasos .paso {
+        padding: 1em 0.7em;
+    }
+}
+@media (max-width: 525px) {
+    .pasos .paso {
+        padding: 1em 1.5em;
     }
 }
 
