@@ -207,7 +207,7 @@
 
 @media (max-width: 350px) {
     .pasos .paso {
-        padding: 1em 0.5em;
+        padding: 1em 0.2em;
     }
 }
 @media (max-width: 400px) {
