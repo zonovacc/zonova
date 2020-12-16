@@ -169,3 +169,31 @@
         width: 100%;
     }
 }
+
+
+/* CONTACTO */
+
+@media (max-width: 932px) {
+    .contactot {
+        margin-right: 15px;
+    }
+    .contactot1 {
+        margin-right: 15px;
+    }
+}
+@media (max-width: 812px) {
+    .contactot {
+        margin-right: 10px;
+    }
+    .contactot1 {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .contactot {
+        margin-right: 0px;
+    }
+    .contactot1 {
+        margin-right: 0px;
+    }
+}

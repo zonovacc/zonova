@@ -1002,13 +1002,19 @@ article:nth-child(3) {
 
 .texto4 {
     width: 100%;
-    margin-top: 49px;
-    margin-bottom: 10px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .texto4 h3 {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.texto4 h3 span {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contenedor1 {
@@ -1146,13 +1152,19 @@ article:nth-child(3) {
 
 .texto5 {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .texto5 h3 {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.texto5 h3 span {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contacto-shop {
@@ -1444,7 +1456,7 @@ article:nth-child(3) {
     background-color: #030713;
     background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     height: 80px;
     line-height: 80px;
