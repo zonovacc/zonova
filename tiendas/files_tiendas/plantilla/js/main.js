@@ -107,7 +107,11 @@ const grid = new Muuri('.grid', {
 	
 /* TABS */
 
-
+$('.paso a').click(function(){
+	$('.paso.active').removeClass('active');
+	$(this).closest('.paso').addClass('active');
+	return false;
+});
 
 	
 /* CONTACTO */

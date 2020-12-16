@@ -171,6 +171,45 @@
 }
 
 
+/* PASOS */
+
+@media (max-width: 1120px) {
+    .botonshare {
+        margin-top: 295px;
+    }
+}
+@media (max-width: 592px) {
+    .botonshare {
+        margin-top: 315px;
+    }
+}
+@media (max-width: 424px) {
+    .botonshare {
+        margin-top: 335px;
+    }
+}
+@media (max-width: 312px) {
+    .botonshare {
+        margin-top: 355px;
+    }
+}
+@media (max-width: 252px) {
+    .botonshare {
+        margin-top: 375px;
+    }
+}
+
+@media (max-width: 856px) {
+    .pasos .paso a p {
+        display: none;
+    }
+
+    .pasos .paso {
+        margin: 0em;
+    }
+}
+
+
 /* CONTACTO */
 
 @media (max-width: 932px) {

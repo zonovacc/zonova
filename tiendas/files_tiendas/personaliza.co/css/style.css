@@ -1136,16 +1136,127 @@ article:nth-child(3) {
 
 /* TABS */
 
-/*.texto6 {
+.texto6 {
     width: 100%;
-    margin-top: 49px;
-    margin-bottom: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .texto6 h3 {
-    font-size: 32px;
-}*/
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.texto6 h3 span {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pashop {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2 {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.pasos {
+    position: relative;
+}
+
+.pasos .paso {
+    position: absolute;
+    top: 0;
+    width: calc(16.6% - 1em);
+    max-height: 3.1em;
+    margin: 0.5em;
+    padding: 1em;
+    background: #34495e;
+    color: #fff;
+    float: left;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out, width 0.25s 0.25s ease-in-out, left 0.25s 0.5s ease-in-out, top 0.25s 0.75s ease-in-out;
+}
+
+.pasos .paso:nth-child(1) {
+    left: 0%;
+    background: #ffcb04;
+    border-radius: 15px;
+    color: #000;
+    font-size: 17px;
+}
+.pasos .paso:nth-child(1) a {
+    color: #000;
+}
+.pasos .paso:nth-child(2) {
+    left: 16.6666%;
+    background: #4fa7cc;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.pasos .paso:nth-child(3) {
+    left: 33.3333%;
+    background: #ffcb04;
+    border-radius: 15px;
+    color: #000;
+    font-size: 17px;
+}
+.pasos .paso:nth-child(3) a {
+    color: #000;
+}
+.pasos .paso:nth-child(4) {
+    left: 50%;
+    background: #4fa7cc;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.pasos .paso:nth-child(5) {
+    left: 66.6666%;
+    background: #ffcb04;
+    border-radius: 15px;
+    color: #000;
+    font-size: 17px;
+}
+.pasos .paso:nth-child(5) a {
+    color: #000;
+}
+.pasos .paso:nth-child(6) {
+    left: 83.3333%;
+    background: #4fa7cc;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.pasos .paso > a {
+    display: flex;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: color 2s;
+}
+
+.pasos .paso i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.pasos .paso.active {
+    position: absolute;
+    top: 4.5em;
+    left: 0;
+    width: 100%;
+    max-height: 20em;
+    float: none;
+    transition: top 0.25s 1s ease-in-out, left 0.25s 1.25s ease-in-out, width 0.25s 1.5s ease-in-out, max-height 0.25s 1.75s ease-in-out;
+}
+
+.pasos .paso.active a {
+    color: #fff;
+}
 
 
 /* CONTACTO */
@@ -1364,7 +1475,7 @@ article:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 115px;
+    margin-top: 275px;
 }
 
 .fa-share {
