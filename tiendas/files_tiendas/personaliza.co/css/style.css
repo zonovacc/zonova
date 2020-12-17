@@ -1624,12 +1624,6 @@ article:nth-child(3) {
     display: none;
 }
 
-.contenedor3 .text_rate {
-    font-size: 25px;
-    color: rgb(158, 158, 158);
-    font-weight: 500;
-}
-
 .contenedor3 .star-widget input {
     display: none;
 }
@@ -1656,23 +1650,6 @@ input#rate-5:checked ~ label {
     text-shadow: 0 0 20px #952;
 }
 
-.star-widget form {
-    display: none;
-}
-
-input:checked ~ form {
-    display: block;
-}
-
-.star-widget form header {
-    width: 100%;
-    font-size: 25px;
-    color: #fe7;
-    text-align: center;
-    margin: 5px 0 20px 0;
-    transition: all .2s ease;
-}
-
 #rate-1:checked ~ form header::before {
     content: 'Simplemente, lo odié';
 }
@@ -1687,48 +1664,6 @@ input:checked ~ form {
 }
 #rate-5:checked ~ form header::before {
     content: '¡Amé esta tienda!';
-}
-
-.star-widget form .textarea {
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.star-widget form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    color: #eee;
-    border: 1px solid #333;
-    background: #222;
-    padding: 10px;
-    font-size: 17px;
-    resize: none;
-}
-
-.star-widget form .btn-rate {
-    height: 45px;
-    width: 100%;
-    margin: 15px 0;
-}
-
-.star-widget form .btn-rate button {
-    height: 100%;
-    width: 100%;
-    border: 1px solid #444;
-    outline: none;
-    background: #222;
-    color: #999;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.star-widget form .btn-rate button:hover {
-    background: #1b1b1b;
 }
 
 
