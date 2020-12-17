@@ -682,22 +682,6 @@ label #cancel {
 }
 
 
-/* ANUNCIO */
-
-.anuncio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-
-.anuncio img {
-    max-width: 100%;
-}
-
-
 /* ÚLTIMOS PRODUCTOS */
 
 .texto2 {
@@ -1017,8 +1001,90 @@ article:nth-child(3) {
     text-transform: uppercase;
 }
 
-.contenedor1 {
-    
+.controls {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.control {
+    background: #1d1d1d;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 7px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.container:after {
+    display: inline-block;
+    width: 100%;
+}
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #4fa7cc;
+    border-top: .5rem solid currentColor;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.mix img {
+    max-width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.mix img:hover {
+    opacity: 50%;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+    padding-top: 56.25%;
+}
+
+.mix.color {
+    color: #ffcb04;
+}
+.mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
 }
 
 
@@ -1446,6 +1512,140 @@ article:nth-child(3) {
 }
 .fa-linkedin:hover {
     color: #0E76A8;
+}
+
+
+/* RATE */
+
+.ratetienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contenedor3 {
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor3 .post {
+    display: none;
+}
+
+.contenedor3 .text_rate {
+    font-size: 25px;
+    color: rgb(158, 158, 158);
+    font-weight: 500;
+}
+
+.contenedor3 .star-widget input {
+    display: none;
+}
+
+.star-widget label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+
+input:checked ~ label {
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+.star-widget form {
+    display: none;
+}
+
+input:checked ~ form {
+    display: block;
+}
+
+.star-widget form header {
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    text-align: center;
+    margin: 5px 0 20px 0;
+    transition: all .2s ease;
+}
+
+#rate-1:checked ~ form header::before {
+    content: 'Simplemente, lo odié';
+}
+#rate-2:checked ~ form header::before {
+    content: 'No me gustó';
+}
+#rate-3:checked ~ form header::before {
+    content: 'Es asombroso';
+}
+#rate-4:checked ~ form header::before {
+    content: 'Simplemente, me encanta';
+}
+#rate-5:checked ~ form header::before {
+    content: '¡Amé esta tienda!';
+}
+
+.star-widget form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.star-widget form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.star-widget form .btn-rate {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.star-widget form .btn-rate button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.star-widget form .btn-rate button:hover {
+    background: #1b1b1b;
 }
 
 
