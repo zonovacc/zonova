@@ -832,14 +832,47 @@ label #cancel {
 }
 
 article:nth-child(1) {
-    background-color: rgb(20, 20, 20);
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+    color: #000;
+}
+article:nth-child(1) .card-name {
+    background: #000;
     color: #fff;
 }
+article:nth-child(1) .card-price input[type="checkbox"],
+article:nth-child(1) .card-price input[type="checkbox"]::before,
+article:nth-child(1) .card-price input[type="checkbox"]::after {
+    background: rgb(27, 27, 27);
+}
+article:nth-child(1) .card-price input[type="checkbox"]:checked,
+article:nth-child(1) .card-price input:checked[type="checkbox"]::before,
+article:nth-child(1) .card-price input:checked[type="checkbox"]::after {
+    background:rgb(212, 0, 0);
+}
+
 article:nth-child(2) {
-    background-color: rgb(212, 0, 0);
+    background-color: #fafafa;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+    color: #000;
+}
+article:nth-child(2) .card-name {
+    background: #000;
+    color: #fff;
+}
+article:nth-child(2) .card-price input[type="checkbox"],
+article:nth-child(2) .card-price input[type="checkbox"]::before,
+article:nth-child(2) .card-price input[type="checkbox"]::after {
+    background: rgb(27, 27, 27);
+}
+article:nth-child(2) .card-price input[type="checkbox"]:checked,
+article:nth-child(2) .card-price input:checked[type="checkbox"]::before,
+article:nth-child(2) .card-price input:checked[type="checkbox"]::after {
+    background:rgb(212, 0, 0);
 }
 article:nth-child(3) {
-    background-color: rgb(20, 20, 20);
+    background-color: #111111;
+    background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
     color: #fff;
 }
 
@@ -858,9 +891,9 @@ article:nth-child(3) {
 }
 
 .card-img {
-    width: 180px;
+    width: 210px;
     height: auto;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     transition: 0.5s;
 }
 
@@ -884,6 +917,8 @@ article:nth-child(3) {
     background-color: #fff;
     color: #0a1318;
     font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     padding: 17px 17px;
     font-weight: 500;
     left: -25%;
