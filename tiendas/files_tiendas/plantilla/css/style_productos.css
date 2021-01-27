@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+    overflow-x: hidden;
+    background-size: cover no-repeat;
+    background-attachment: fixed;
+    line-height: 1.5;
+}
+body::-webkit-scrollbar{
+    width: 13px;
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f29100;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    border-radius: 4px;
+}
+
+/* CARTA IZQUIERDA */
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exzoom {
+    max-width: 100%;
+    width: 340px;
+}
+
+.exzoom_img_ul img {
+    max-width: 100%;
+}
+
+
+/* CARTA DERECHA */
+
+.product-content {
+    padding: 2rem 1rem;
+}
+
+.product-title {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+
+.product-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+
+.product-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #35a7f5;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.product-link:hover {
+    background: #2986c4;
+}
+
+.product-rating {
+    color: #ffc107;
+}
+
+.product-rating span {
+    font-weight: 700;
+    color: #252525;
+    font-size: 18px;
+    margin-left: 4px;
+}
+
+.product-price {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product-price span {
+    font-weight: 400;
+}
+
+.last-price span {
+    color: #f64749;
+    text-decoration: line-through;
+}
+
+.new-price span {
+    color: #2986c4;
+    font-size: 25px;
+}
+
+.product-detail h2 {
+    text-transform: uppercase;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+
+.product-detail p {
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    opacity: 0.9;
+}
+
+.product-detail ul {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.product-detail ul li {
+    margin: 0;
+    list-style: none;
+    background: url(../img/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.product-detail ul li span {
+    font-weight: 400;
+}
+
+.purchase-info {
+    margin: 1.5rem 0;
+}
+
+.purchase-info a {
+    background: #35a7f5;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.purchase-info a:hover {
+    letter-spacing: 1px;
+    background: #2986c4;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.1s ease;
+}
+
+.social-links a:hover {
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+.social-links p {
+    margin-right: 7px;
+}
+
+.social-links p i {
+    margin-right: 5px;
+}
