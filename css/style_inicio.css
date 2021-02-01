@@ -403,11 +403,11 @@ label #cancel {
 
 .btn-wsp {
     position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    bottom: 90px;
+    right: 29px;
     background: #0df053;
     color: #fff;
     border-radius: 50px;
