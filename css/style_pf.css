@@ -23,6 +23,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+
 
 /* PRELOADER */
 
@@ -277,6 +282,11 @@ main {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 30px;
+    transition: 0.3s all ease;
+}
+
+body.dark .titulo {
+    color: #fff;
 }
 
 
@@ -301,6 +311,11 @@ main {
     transition: .3s ease all;
 }
 
+body.dark .categoria {
+    background-color: #071018;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+}
+
 .categoria p {
     text-transform: uppercase;
 }
@@ -308,6 +323,10 @@ main {
 .categoria:hover {
     box-shadow: 0 0 13px 0 rgba(185,185,185, .25);
     color: #000;
+}
+
+body.dark .categoria:hover {
+    color: #fff;
 }
 
 .categoria:hover path {
@@ -327,6 +346,10 @@ main {
 .categoria.activa {
     border: 2px solid #f29100;
     color: #000;
+}
+
+body.dark .categoria.activa {
+    color: #fff;
 }
 
 .categoria.activa path {
@@ -356,12 +379,22 @@ main {
     cursor: pointer;
 }
 
+body.dark .contenedor-pregunta {
+    background-color: #080b0e;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+}
+
 .contenedor-pregunta:hover {
     box-shadow: 0 0 13px 0 rgba(185,185,185, .25);
 }
 
 .contenedor-pregunta.activa {
     border: 2px solid #f29100;
+}
+
+.precios {
+    text-decoration: none;
+    color: #f29100;
 }
 
 
@@ -374,6 +407,11 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s all ease;
+}
+
+body.dark .pregunta {
+    color: #fff;
 }
 
 .pregunta img {
@@ -388,11 +426,42 @@ main {
     transition: .3s all ease;
 }
 
+body.dark .respuesta {
+    color: rgb(214, 214, 214);
+}
+
 .contenedor-pregunta.activa .respuesta {
     opacity: 1;
     margin-top: 20px;
 }
 
 .contenedor-pregunta.activa img {
+    transition: .3s all ease;
     transform: rotate(45deg);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #030713;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 70px;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+    box-shadow: 0px 2px 24px -2px rgba(53,167,245,1);
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer span {
+    color: #F29100;
 }

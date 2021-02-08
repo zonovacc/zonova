@@ -5,6 +5,16 @@ $(window).on("load", function(){
 });
 
 
+/* MODO NOCTURNO */
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+});
+
+
 /* PREGUNTAS Y RESPUESTAS */
 
 const categorias = document.querySelectorAll('#categorias .categoria');
