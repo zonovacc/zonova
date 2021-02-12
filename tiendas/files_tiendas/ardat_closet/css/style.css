@@ -25,6 +25,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+
 
 /* SIDEBAR MENÚ */
 
@@ -310,6 +315,9 @@ label #cancel {
     background-color: #000;
     background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
     padding: 40px 20px 40px 100px;
+    -webkit-box-shadow: 0px 2px 24px -2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 2px 24px -2px rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 24px -2px rgba(255, 255, 255, 1);
 }
 
 .nombreshop h2 {
@@ -678,10 +686,15 @@ label #cancel {
     width: 100%;
     margin-top: 50px;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .texto2 h3 {
     font-size: 32px;
+}
+
+body.dark .texto2 {
+    color: #fff;
 }
 
 .box {
@@ -797,10 +810,15 @@ label #cancel {
     width: 100%;
     margin-top: 56px;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .texto3 h3 {
     font-size: 32px;
+}
+
+body.dark .texto3 {
+    color: #fff;
 }
 
 .main1 {
@@ -1013,6 +1031,7 @@ article:nth-child(3) {
     width: 100%;
     margin-top: 30px;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .texto4 h3 {
@@ -1024,6 +1043,10 @@ article:nth-child(3) {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+body.dark .texto4 {
+    color: #fff;
 }
 
 .controls {
@@ -1043,6 +1066,12 @@ article:nth-child(3) {
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+body.dark .control {
+    background: #fff;
+    color: #000;
 }
 
 .select_wrap{
@@ -1176,7 +1205,13 @@ article:nth-child(3) {
 
 .mix.color {
     color: #000;
+    transition: 0.3s all ease;
 }
+
+body.dark .mix.color {
+    color: #fff;
+}
+
 .mix,
 .gap {
     width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
@@ -1203,6 +1238,7 @@ article:nth-child(3) {
     width: 100%;
     margin-top: 30px;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .texto6 h3 {
@@ -1214,6 +1250,10 @@ article:nth-child(3) {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+body.dark .texto6 {
+    color: #fff;
 }
 
 .pashop {
@@ -1246,51 +1286,63 @@ article:nth-child(3) {
 
 .pasos .paso:nth-child(1) {
     left: 0%;
-    background: #fff;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes-light.png");
     border-radius: 15px;
     color: #000;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, .2);
 }
 .pasos .paso:nth-child(1) a {
     color: #000;
 }
 .pasos .paso:nth-child(2) {
     left: 16.6666%;
-    background: #000;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
     border-radius: 15px;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(255, 255, 255, .2);
 }
 .pasos .paso:nth-child(3) {
     left: 33.3333%;
-    background: #fff;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes-light.png");
     border-radius: 15px;
     color: #000;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, .2);
 }
 .pasos .paso:nth-child(3) a {
     color: #000;
 }
 .pasos .paso:nth-child(4) {
     left: 50%;
-    background: #000;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
     border-radius: 15px;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(255, 255, 255, .2);
 }
 .pasos .paso:nth-child(5) {
     left: 66.6666%;
-    background: #fff;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-stripes-light.png");
     border-radius: 15px;
     color: #000;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, .2);
 }
 .pasos .paso:nth-child(5) a {
     color: #000;
 }
 .pasos .paso:nth-child(6) {
     left: 83.3333%;
-    background: #000;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
     border-radius: 15px;
     font-size: 17px;
+    box-shadow: 0 0 13px 0 rgba(255, 255, 255, .2);
 }
 
 .pasos .paso > a {
@@ -1324,6 +1376,7 @@ article:nth-child(3) {
     width: 100%;
     margin-top: 30px;
     text-align: center;
+    transition: 0.3s all ease;
 }
 
 .texto5 h3 {
@@ -1335,6 +1388,10 @@ article:nth-child(3) {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+body.dark .texto5 {
+    color: #fff;
 }
 
 .contacto-shop {
@@ -1543,6 +1600,12 @@ article:nth-child(3) {
     color: #fff;
     padding: 15px;
     cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+body.dark .fa-share {
+    background: #fff;
+    color: #000;
 }
 
 .fa-share:hover {
@@ -1619,6 +1682,18 @@ article:nth-child(3) {
     color: #0E76A8;
 }
 
+.text-in,
+.text-fb,
+.text-wp {
+    transition: 0.3s all ease;
+}
+
+body.dark .text-in,
+body.dark .text-fb,
+body.dark .text-wp {
+    color: #fff;
+}
+
 
 /* RATE */
 
@@ -1628,6 +1703,11 @@ article:nth-child(3) {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    transition: 0.3s all ease;
+}
+
+body.dark .ratetienda {
+    color: #fff;
 }
 
 .contenedor3 {
