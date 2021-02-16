@@ -25,133 +25,177 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
 }
 
-.contenedor {
+
+/* SIDEBAR MENÚ */
+
+.sidebar {
+    position: fixed;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    background: #1b1b1b;
+    z-index: 21;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    color: #fff;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    background-color: #141414;
+    user-select: none;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid #000;
+    border-left: 5px solid transparent;
+    transition: all .5s ease;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: #f29100;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    border-left: 5px solid #f29100;
+    color: #f29100;
+}
+
+.sidebar a i {
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.sidebar a span {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: fixed;
+    cursor: pointer;
+    background: #f29100;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 29px;
+    border-radius: 5px;
+    margin: 15px 30px;
+    border: 1px solid #b36b00;
+    z-index: 20;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #btn {
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #cancel {
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+.modon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.switch {
+    background: #343D5B;
+    font-size: 20px;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    transition: .1s all ease;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+    background: #f29100;
+    color: #000;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+.switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.likefb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* REGISTRO */
+
+.contenedor1 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 100px;
+    padding-top: 10px;
+    transition: 0.3s all ease;
 }
 
-.contact-box {
-    max-width: 950px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-    border-radius: 16px;
-    -webkit-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
-    transition: .3s ease all;
-}
-
-body.dark .contact-box {
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-    -webkit-box-shadow: 0px 0px 20px -7px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: 0px 0px 20px -7px rgba(255,255,255,0.5);
-    box-shadow: 0px 0px 20px -7px rgba(255,255,255,0.5);
-}
-
-.left {
-    height: 100%;
-    background: url(../img/shop_zonova.jpg) no-repeat center;
-    background-size: cover;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-}
-
-.right {
-    padding: 25px 40px;
-}
-
-.right h2 {
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    transition: .3s ease all;
-}
-
-body.dark .right h2 {
-    color: #fff;
-}
-
-.right h2::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #35a7f5;
-}
-
-.field {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    background-color: rgba(230, 230, 230, 0.6);
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s ease all;
-}
-
-body.dark .field {
-    background-color: rgba(31, 31, 31, 0.6);
-    color: #fff;
-}
-
-.field:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: .3s ease all;
-}
-
-body.dark .field:hover {
-    background-color: rgba(117, 117, 117, 0.3);
-    color: #fff;
-}
-
-.field:focus {
-    background-color: #fff;
-    border: 2px solid rgba(242, 145, 0, 0.47);
-    transition: .3s ease all;
-}
-
-body.dark .field:focus {
-    background-color: #000;
-    color: #fff;
-}
-
-.area {
-    min-height: 150px;
-}
-
-.btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    background-color: #eb8d00;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    transition: .3s;
-}
-
-.btn:hover {
-    background-color: #ff9900;
-    color: #000;
-    font-weight: 600;
-    letter-spacing: 1px;
+@media (max-width: 850px) {
+    .contenedor1 {
+        padding-top: 70px;
+    }
 }

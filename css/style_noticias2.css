@@ -265,3 +265,23 @@ hr {
     top: 70px;
   }
 }
+
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+.footer h4 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer span {
+  color: #F29100;
+}
