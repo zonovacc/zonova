@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
     background-size: cover no-repeat;
     background-attachment: fixed;
+    transition: 0.3s all ease;
 }
 body::-webkit-scrollbar{
     width: 13px;
@@ -22,6 +23,11 @@ body::-webkit-scrollbar-thumb{
     background-color: #f29100;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     border-radius: 4px;
+}
+
+body.dark {
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
 }
 
 
